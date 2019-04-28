@@ -8,3 +8,9 @@ This tutorial introduces the reader to the concepts of Flow-Based Programming, b
 Here is a possible diagram:
 
 ![High level diagram](docs/Step1.png)
+
+In this step, you should install DrawFBP (https://github.com/jpaulm/drawfbp ), and draw this diagram.
+
+Save it a work directory of your choice.  If you open it using Wordpad, it should look as follows:
+
+--- Step1.drw ---
