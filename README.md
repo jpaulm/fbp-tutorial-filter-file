@@ -11,6 +11,8 @@ Here is a possible diagram:
 
 In this step, you should install DrawFBP (https://github.com/jpaulm/drawfbp ), and draw this diagram.
 
-Save it a work directory of your choice.  If you open it using Wordpad, it should look as follows:
+Save it in a work directory of your choice.  If you open it using Wordpad, it should look as follows:
 
---- Step1.drw ---
+[,drw file for this diagram](docs/Step1.drw)
+
+Of course, if you have trouble drawing the diagram, you can simply copy the `.drw` file, and open this file under DrawFBP.
