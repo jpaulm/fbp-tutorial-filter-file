@@ -8,6 +8,8 @@ FBP is a special case of dataflow programming characterized by asynchronous, con
 
 This tutorial introduces the reader to the concepts of Flow-Based Programming, by means of diagrams built using DrawFBP, stepping the reader through the stages of designing networks, generating Java networks from them, and running the generated Java code, using precoded components, and (late) user-written components.
 
+The term "IIP" refers to an Initial Information Packet, and refers to the technique FBP uses to parameterize components - IIPs are specified in the network definition, but are converted into normal IPs when they are "received" by a process. 
+
 
 ## Step 1.  Draw high level diagram of app to display contents of file. 
 
