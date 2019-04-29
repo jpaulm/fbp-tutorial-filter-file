@@ -35,4 +35,10 @@ In this step we are going to add a filter function between the two blocks shown 
 
 For the purposes of this tutorial, we will specify that the records read by the 'read' process need to be selected by matching on the first character. As it happens, there is a precoded, reusable FBP component called StartsWith, which takes a character string as its parameter (specified using an IIP), and whose output port names are ACC and REJ.  We will therefore associate this component with the filter block, using the Choose Component/Subnet Class function provided for DrawFBP blocks.  This function is provided by DrawFBP for both the Java and C# language choices.
 
-Since different components specify different port names, you can check whether you have set up the port names correctly by clicking on the Display Description and Port Info function provided for DrawFBP blocks.  In addition this function will indicate whether the ports have all been connected, and whether in fact any port names have been misspelled.
+Since different components specify different port names, you can check whether you have set up the port names correctly by clicking on the Display Description and Port Info function provided for DrawFBP blocks.  In addition, once you have chosen a component, this function will indicate whether the ports have all been connected, and whether in fact any port names have been misspelled.
+
+This display should look like this at this point:
+
+![StartsWith ports](docs/StartsWith.png)
+
+
