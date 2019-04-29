@@ -3,11 +3,11 @@
 xsi:noNamespaceSchemaLocation="https://github.com/jpaulm/drawfbp/blob/master/lib/drawfbp_file.xsd"><net><desc>High Level Diagram</desc> <complang>FBP</complang> <clicktogrid>true</clicktogrid> 
 <blocks><block> <x> 267 </x> <y> 161 </y> <id> 29 </id> <type>B</type> <width>92</width> <height>64</height> <description>read
 sample
-file</description> <blockclassname>C:/Users/bobco/drawfbp/javafbp-4.1.0.jar!com.jpaulmorrison.fbp.core.components.io.ReadFile</blockclassname> <multiplex>false</multiplex><invisible>false</invisible><issubnet>false</issubnet> 
+file</description> <multiplex>false</multiplex><invisible>false</invisible><issubnet>false</issubnet> 
 </block> 
 <block> <x> 670 </x> <y> 161 </y> <id> 30 </id> <type>B</type> <width>92</width> <height>64</height> <description>display
 accepted
-lines</description> <blockclassname>C:/Users/bobco/drawfbp/javafbp-4.1.0.jar!com.jpaulmorrison.fbp.core.components.swing.ShowText</blockclassname> <multiplex>false</multiplex><invisible>false</invisible><issubnet>false</issubnet> 
+lines</description> <multiplex>false</multiplex><invisible>false</invisible><issubnet>false</issubnet> 
 </block> 
 </blocks> <connections>
 <connection> <fromx>313</fromx> <fromy>161</fromy> <tox>624</tox> <toy>161</toy> <fromid>29</fromid> <toid>30</toid> <id>25</id> <endsatline>false</endsatline><upstreamport></upstreamport><downstreamport></downstreamport><segno>0</segno></connection> 
