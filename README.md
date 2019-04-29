@@ -23,6 +23,8 @@ Save it in a work directory of your choice.  If you open it using Wordpad, it sh
 
 Of course, if you have trouble drawing the diagram, you can simply copy the `.drw` file, and open this file under DrawFBP.
 
+At this point, you should take a look at the functions provided by DrawFBP.  DrawFBP has a Help facility, which takes you through a lot of the DrawFBP functionality.
+
 Now at this point, you can simply assign real live components to the blocks in the diagrams (plus IIPs and port names), and you will basically have a running program.  However, I am going to assume that you want to add filter function between the two processes, so that is what we will do in Step2.
 
 ## Step2. Add a filter function 
@@ -31,4 +33,4 @@ In this step we are going to add a filter function between the two blocks shown 
 
 ![Diagram showing filter](docs/Step2.png)
 
-In this example the filter will use a precoded FBP component called StartsWith, which takes a character string as its parameter (specified using an IIP), and whose output port names are ACC and REJ.
+For the purposes of this tutorial, we will specify that the records read by the 'read' process need to be selected by matching on the first character. As it happens, there is a precoded, reusable FBP component called StartsWith, which takes a character string as its parameter (specified using an IIP), and whose output port names are ACC and REJ.  We will therefore associate this component with the filter block, using the Choose Component/Subnet Class function provided for DrawFBP blocks.  This function is provided by DrawFBP for both the Java and C# language choices.
