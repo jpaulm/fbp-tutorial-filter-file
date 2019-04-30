@@ -39,7 +39,7 @@ For the purposes of this tutorial, we will specify that the records read by the 
 
 How do we find this out?  Well, the first step is to install JavaFBP ( https://github.com/jpaulm/javafbp ) in a directory called `javafbp`.  Now go to your `javafbp/build/docs/javadoc` directory, and select `index.html`.  Click on `PACKAGE`, then click on `...components.text`, and you will easily find `StartsWith`.
 
-**TODO: javadoc doesn't show port names! See issue #1.**
+**TODO: javadoc doesn't show port names and their functions! See issue #1.**
 
 We will therefore associate this component with the filter block.  Since the component is in JavaFBP, you will need to use DrawFBP's Locate JavaFBP Jar File function, and then find StartsWith in that jar file, using the using the Choose Component/Subnet Class block function provided by DrawFBP. 
 
@@ -55,4 +55,4 @@ This display should look like this at this point:
 
 `TEST` is of course the port name for the IIP specifying the test character for matching.
 
-
+**TODO: Port display should show functions of ports - these need to be filled in in JavaFBP.  See issue #2**
