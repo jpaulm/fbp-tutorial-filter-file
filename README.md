@@ -53,6 +53,6 @@ This display should look like this at this point:
 
 ![StartsWith ports](docs/StartsWith.png)
 
-Moving right along!
+`TEST` is of course the port name for the IIP specifying the test character for matching.
 
 
