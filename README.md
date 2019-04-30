@@ -43,16 +43,24 @@ How do we find this out?  Well, the first step is to install JavaFBP ( https://g
 
 We will therefore associate this component with the filter block.  Since the component is in JavaFBP, you will need to use DrawFBP's Locate JavaFBP Jar File function, and then find StartsWith in that jar file, using the using the Choose Component/Subnet Class block function provided by DrawFBP. 
 
-Since different components specify different port names, you need to find out the port names used by StartsWith.  (This should be available in the Javadoc, but it isn't! Issue #1) The diagram should now look like this:
+Since different components specify different port names, you need to find out the port names used by StartsWith.  Right now (Apr. 2019) there is no convenient mechanism to find this out (this should be available in the Javadoc, but it isn't! See issue #1). You therefore have two mechanisms:
 
-![Diagram using StartsWith](docs/Step3.png)
-
-You can check whether you have set up the port names correctly by clicking on the Display Description and Port Info function provided for DrawFBP blocks (right clicking on StartsWith brings up the block menu).  In addition, once you have chosen a component, this function will indicate whether the ports have all been connected, and (indirectly) whether in fact any port names have been misspelled.
-
-This display should look like this at this point:
+- go to the source code for the component in the JavaFBP repo ( `src/main/java/com/jpaulmorrison/fbp/core` ), and look at the annotations (@OutPorts and @InPorts), or click on the Display Description and Port Info function provided for DrawFBP blocks (right clicking on StartsWith brings up the block menu), which will bring up a display like the following:
 
 ![StartsWith ports](docs/StartsWith.png)
 
-`TEST` is of course the port name for the IIP specifying the test character for matching.
+Of course, if you haven't filled in any of the port names, this display will show `NO` in the `Connected?` column.
 
 **TODO: Port display should show functions of ports - these need to be filled in in JavaFBP.  See issue #2**
+
+After filling in the `IN`, `ACC` and `REJ` port names, the diagram should now look like this:
+
+![Diagram using StartsWith](docs/Step3.png)
+
+If any port names have been misspelled, you will see a port name unconnected, and another one unrecognized.
+
+## Step4.  Adding an IIP
+
+`TEST` is the port name for the IIP specifying the test character for matching.  We now have to add an IIP to the diagram.
+
+
