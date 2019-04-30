@@ -43,10 +43,16 @@ How do we find this out?  Well, the first step is to install JavaFBP ( https://g
 
 We will therefore associate this component with the filter block.  Since the component is in JavaFBP, you will need to use DrawFBP's Locate JavaFBP Jar File function, and then find StartsWith in that jar file, using the using the Choose Component/Subnet Class block function provided by DrawFBP. 
 
-Since different components specify different port names, you need to find out the port names used by StartsWith.  (This should be available in the Javadoc, but it isn't! Issue #1) You can check whether you have set up the port names correctly by clicking on the Display Description and Port Info function provided for DrawFBP blocks.  In addition, once you have chosen a component, this function will indicate whether the ports have all been connected, and whether in fact any port names have been misspelled.
+Since different components specify different port names, you need to find out the port names used by StartsWith.  (This should be available in the Javadoc, but it isn't! Issue #1) The diagram should now look like this:
+
+![Diagram using StartsWith](docs/Step3.png)
+
+You can check whether you have set up the port names correctly by clicking on the Display Description and Port Info function provided for DrawFBP blocks (right clicking on StartsWith brings up the block menu).  In addition, once you have chosen a component, this function will indicate whether the ports have all been connected, and (indirectly) whether in fact any port names have been misspelled.
 
 This display should look like this at this point:
 
 ![StartsWith ports](docs/StartsWith.png)
+
+Moving right along!
 
 
