@@ -59,7 +59,7 @@ After filling in the `IN`, `ACC` and `REJ` port names, the diagram should now lo
 
 ![Diagram using StartsWith](docs/Step3.png)
 
-If any port names have been misspelled, you will see a port name unconnected, and another one unrecognized.
+If any port names have been misspelled, you will see a port name `Missing`, and another one unrecognized (`?` under `Connected?`).
 
 ## Step4.  Adding an IIP
 
