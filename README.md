@@ -45,7 +45,9 @@ We will therefore associate this component with the filter block.  Since the com
 
 Since different components specify different port names, you need to find out the port names used by StartsWith.  Right now (Apr. 2019) there is no convenient mechanism to find this out (this should be available in the Javadoc, but it isn't! See issue #1). You therefore have two mechanisms:
 
-- go to the source code for the component in the JavaFBP repo ( `src/main/java/com/jpaulmorrison/fbp/core` ), and look at the annotations (@OutPorts and @InPorts), or click on the Display Description and Port Info function provided for DrawFBP blocks (right clicking on StartsWith brings up the block menu), which will bring up a display like the following:
+- go to the source code for the component in the JavaFBP repo ( `src/main/java/com/jpaulmorrison/fbp/core` ), and look at the annotations (@OutPorts and @InPorts), or 
+
+- click on the Display Description and Port Info function provided for DrawFBP blocks (right clicking on StartsWith brings up the block menu), which will bring up a display like the following:
 
 ![StartsWith ports](docs/StartsWith.png)
 
