@@ -17,7 +17,7 @@ Here is a possible diagram:
 
 ![High level diagram](docs/Step1.png)
 
-In this step, you should install DrawFBP (https://github.com/jpaulm/drawfbp ), and draw this diagram.
+In this step, you should install DrawFBP ( https://github.com/jpaulm/drawfbp ), and draw this diagram.
 
 Save it in a work directory of your choice.  If you open it using Wordpad, it should look like the file you get when you click on [this link](docs/Step1.drw).
 
@@ -33,12 +33,26 @@ In this step we are going to add a filter function between the two blocks shown 
 
 ![Diagram showing filter](docs/Step2.png)
 
-For the purposes of this tutorial, we will specify that the records read by the 'read' process need to be selected by matching on the first character. As it happens, there is a precoded, reusable FBP component called StartsWith, which takes a character string as its parameter (specified using an IIP), and whose output port names are ACC and REJ.  We will therefore associate this component with the filter block, using the Choose Component/Subnet Class function provided for DrawFBP blocks.  This function is provided by DrawFBP for both the Java and C# language choices.
+## Step3. Assigning a component to the filter block
 
-Since different components specify different port names, you can check whether you have set up the port names correctly by clicking on the Display Description and Port Info function provided for DrawFBP blocks.  In addition, once you have chosen a component, this function will indicate whether the ports have all been connected, and whether in fact any port names have been misspelled.
+For the purposes of this tutorial, we will specify that the records read by the 'read' process need to be selected by matching the first character against a character provided as a parameter. As it happens, JavaFBP provides a precoded, reusable FBP component called `StartsWith`, which takes a character string as its parameter (specified using an IIP), and whose output port names are ACC and REJ.  
+
+How do we find this out?  Well, the first step is to install JavaFBP ( https://github.com/jpaulm/javafbp ) in a directory called `javafbp`.  Now go to your `javafbp/build/docs/javadoc` directory, and select `index.html`.  Click on `PACKAGE`, then click on `...components.text`, and you will easily find `StartsWith`.
+
+**TODO: javadoc doesn't show port names! See issue #1.**
+
+We will therefore associate this component with the filter block.  Since the component is in JavaFBP, you will need to use DrawFBP's Locate JavaFBP Jar File function, and then find StartsWith in that jar file, using the using the Choose Component/Subnet Class block function provided by DrawFBP. 
+
+Since different components specify different port names, you need to find out the port names used by StartsWith.  (This should be available in the Javadoc, but it isn't! Issue #1) The diagram should now look like this:
+
+![Diagram using StartsWith](docs/Step3.png)
+
+You can check whether you have set up the port names correctly by clicking on the Display Description and Port Info function provided for DrawFBP blocks (right clicking on StartsWith brings up the block menu).  In addition, once you have chosen a component, this function will indicate whether the ports have all been connected, and (indirectly) whether in fact any port names have been misspelled.
 
 This display should look like this at this point:
 
 ![StartsWith ports](docs/StartsWith.png)
+
+Moving right along!
 
 
