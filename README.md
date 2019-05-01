@@ -53,7 +53,7 @@ Since different components specify different port names, you need to find out th
 
 Of course, if you haven't filled in any of the port names, this display will show `NO` in the `Connected?` column.
 
-**TODO: Port display should show functions of ports - these need to be filled in in JavaFBP.  See issue #2**
+**TODO: Port display for many components are missing functions of ports - these need to be filled in in JavaFBP.  See issue #2**
 
 After filling in the `IN`, `ACC` and `REJ` port names, the diagram should now look like this:
 
