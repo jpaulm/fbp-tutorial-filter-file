@@ -63,6 +63,11 @@ If any port names have been misspelled, you will see a port name `Missing`, and 
 
 ## Step4.  Adding an IIP
 
-`TEST` is the port name for the IIP specifying the test character for matching.  We now have to add an IIP to the diagram.
+Now, as shown in the port list shown above, `TEST` is the port name for the IIP specifying the test character for matching. As stated above, IIPs are the way FBP reusable components are parameterized.  Usually the parameter is specified in a network definition, so that a network can use the same component in more than one place in the network - with different parameters - but IIPs have the added advantage that the network can easily be changed to present the parameter information as a data chunk (normal IP), obtained from an upstream process.
+
+In this case the parameter for `StartsWith` will be provided as an IIP, so now have to add it to the diagram.  In DrawFBP just click on the button at the bottom marked `Initial IP`, and clicking on the drawing screen will create an IIP, and allow some text to be entered.  The diagram now looks like this:
+
+![Diagram with IIP](docs/Step4.png)
+
 
 
