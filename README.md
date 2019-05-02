@@ -35,25 +35,25 @@ In this step we are going to add a filter function between the two blocks shown 
 
 ## Step3. Assigning a component to the filter block
 
-For the purposes of this tutorial, we will specify that the records read by the 'read' process need to be selected by matching the first character against a character provided as a parameter. As it happens, JavaFBP provides a precoded, reusable FBP component called `StartsWith`, which takes a character string as its parameter (specified using an IIP), and whose output port names are ACC and REJ.  
+For the filter function, we need a component that will match the first character against a character provided as a parameter. As it happens, JavaFBP provides a precoded, reusable FBP component called `StartsWith`, which takes a character string as its parameter (specified using an IIP), and whose output port names are ACC and REJ.  
 
-How do we find this out?  Well, the first step is to install JavaFBP ( https://github.com/jpaulm/javafbp ) in a directory called `javafbp`.  Now go to your `javafbp/build/docs/javadoc` directory, and select `index.html`.  Click on `PACKAGE`, then click on `...components.text`, and you will easily find `StartsWith`.
+How do we find a suitable component?  Well, the first step is to install JavaFBP ( https://github.com/jpaulm/javafbp ) in a directory called `javafbp`.  The `javafbp/build/docs/javadoc` directory contains a list of components grouped by function, so we plan to provide a more FBP-oriented facility, which should be available shortly. 
 
 **TODO: javadoc doesn't show port names and their functions! See issue #1.**
 
-We will therefore associate this component with the filter block.  Since the component is in JavaFBP, you will need to use DrawFBP's Locate JavaFBP Jar File function, and then find StartsWith in that jar file, using the using the Choose Component/Subnet Class block function provided by DrawFBP. 
+We now have to associate the `StartsWith` component with the filter block.  Since the component is in JavaFBP, you will need to use DrawFBP's Locate JavaFBP Jar File function, and then find `StartsWith` in that jar file, using the using the Choose Component/Subnet Class block function provided by DrawFBP. 
 
-Since different components specify different port names, you need to find out the port names used by StartsWith.  Right now (Apr. 2019) there is no convenient mechanism to find this out (this should be available in the Javadoc, but it isn't! See issue #1). You therefore have two mechanisms:
+Since different components specify different port names, you need to find out the port names used by StartsWith.  Right now (Apr. 2019) there is no convenient mechanism to find this out (this should be available in the Javadoc, but it isn't! See issue #1). For now, you therefore have two mechanisms:
 
-- go to the source code for the component in the JavaFBP repo ( `src/main/java/com/jpaulmorrison/fbp/core` ), and look at the annotations (@OutPorts and @InPorts), or 
+- go to the source code for the component in the JavaFBP repo ( `src/main/java/com/jpaulmorrison/fbp/core` ), and look at the annotations (`@OutPorts` and `@InPorts`), or 
 
-- click on the Display Description and Port Info function provided for DrawFBP blocks (right clicking on StartsWith brings up the block menu), which will bring up a display like the following:
+- click on the `Display Description and Port Info` function provided for DrawFBP blocks (right clicking on `StartsWith` brings up the block menu), which will bring up a display like the following:
 
 ![StartsWith ports](docs/StartsWith.png)
 
 Of course, if you haven't filled in any of the port names, this display will show `NO` in the `Connected?` column.
 
-**TODO: Port display should show functions of ports - these need to be filled in in JavaFBP.  See issue #2**
+**TODO: Port display for many components are missing functions of ports - these need to be filled in in JavaFBP.  See issue #2**
 
 After filling in the `IN`, `ACC` and `REJ` port names, the diagram should now look like this:
 
