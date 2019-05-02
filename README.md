@@ -6,7 +6,7 @@ Flow-Based Programming (FBP) uses a "data processing factory" metaphor for desig
 
 FBP is a special case of dataflow programming characterized by asynchronous, concurrent processes "under the covers", Information Packets with defined lifetimes, named ports, "bounded buffer" connections, and definition of connections external to the components - it has been found to support improved development time and maintainability, reusability, rapid prototyping, simulation, improved performance, and good communication among developers, maintenance staff, users, systems people, and management - not to mention that FBP naturally takes advantage of multiple cores... without the programmer having to struggle with the intricacies of multitasking!
 
-This tutorial introduces the reader to the concepts of Flow-Based Programming, by means of diagrams built using DrawFBP, stepping the reader through the stages of designing networks, generating Java networks from them, and running the generated Java code, using precoded components, and (late) user-written components.
+This tutorial introduces the reader to the concepts of Flow-Based Programming, by means of diagrams built using DrawFBP, stepping the reader through the stages of designing networks, generating Java networks from them, and running the generated Java code, using precoded components, and (late) user-written components.  This example was originally developed by my collaborator, Bob Corrick.
 
 Almost all data in FBP is managed as "chunks" called "Information Packets (IPs)", with a well-defined lifetime (from craetion to disposition), and unique ownership - an IIP can only be owned by one process, or it may be in transit between processes.  A special type of IP is called an "Initial Information Packet (IIP)", and refers to the technique FBP uses to parameterize components - IIPs are specified in the network definition, but are converted into normal IPs when they are "received" by a process. 
 
@@ -70,4 +70,20 @@ In this case the parameter for `StartsWith` will be provided as an IIP, so we no
 ![Diagram with IIP](docs/Step4.png)
 
 Selecting `StartWith` and clicking on `Display Description and Port Info` will verify that all ports are now correctly connected.
+
+## Step5.  Associating components with the other blocks
+
+Pretty straightforward: just click on each block, and select `Choose Component/Subnet Class`.  
+
+The first block (`read sample file`) would most probably use the `ReadFile` component in the `core/components/io` package in the JavaFBP jar file.  This requires an IIP containing the file name - port name `SOURCE`.
+
+The `ignore` block would most likely use the `Discard` component in the `core/components/routing` package, although of course you could use any component here, or even route the "ignored" IPs to other parts of the diagram.
+
+That just leaves `display accepted lines`.  In his example, Bob Corrick decided to use the `ShowText` component.  This component puts up its output in a separate window, and requires an IIP with port name `TITLE`.  `ShowText` has an optional port called `OUT` - if this is connected, incoming IPs arev routed to this port after being displayed.
+
+Here is the final diagram:
+
+![Diagram with components and IIPs filled in](docs/Step5.png)
+
+
 
