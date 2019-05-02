@@ -8,7 +8,7 @@ FBP is a special case of dataflow programming characterized by asynchronous, con
 
 This tutorial introduces the reader to the concepts of Flow-Based Programming, by means of diagrams built using DrawFBP, stepping the reader through the stages of designing networks, generating Java networks from them, and running the generated Java code, using precoded components, and (late) user-written components.
 
-The term "IIP" refers to an Initial Information Packet, and refers to the technique FBP uses to parameterize components - IIPs are specified in the network definition, but are converted into normal IPs when they are "received" by a process. 
+Almost all data in FBP is managed as "chunks" called "Information Packets (IPs)", with a well-defined lifetime (from craetion to disposition), and unique ownership - an IIP can only be owned by one process, or it may be in transit between processes.  A special type of IP is called an "Initial Information Packet (IIP)", and refers to the technique FBP uses to parameterize components - IIPs are specified in the network definition, but are converted into normal IPs when they are "received" by a process. 
 
 
 ## Step 1.  Draw high level diagram of app to display contents of file. 
@@ -63,6 +63,11 @@ If any port names have been misspelled, you will see a port name `Missing`, and 
 
 ## Step4.  Adding an IIP
 
-`TEST` is the port name for the IIP specifying the test character for matching.  We now have to add an IIP to the diagram.
+Now, as shown in the port list shown above, `TEST` is the port name for the IIP specifying the test character for matching. As stated above, IIPs are the way FBP reusable components are parameterized.  Usually the parameter is specified in a network definition, so that a network can use the same component in more than one place in the network - with different parameters - but IIPs have the added advantage that the network can easily be changed to present the parameter information as a data chunk (normal IP), obtained from an upstream process.
 
+In this case the parameter for `StartsWith` will be provided as an IIP, so we now have to add it to the diagram.  In DrawFBP just click on the button at the bottom marked `Initial IP`, and clicking on the drawing screen will now create an IIP, and allow some text to be entered.  The diagram now looks like this:
+
+![Diagram with IIP](docs/Step4.png)
+
+Selecting `StartWith` and clicking on `Display Description and Port Info` will verify that all ports are now correctly connected.
 
