@@ -79,11 +79,17 @@ The first block (`read sample file`) would most probably use the `ReadFile` comp
 
 The `ignore` block would most likely use the `Discard` component in the `core/components/routing` package, although of course you could use any component here, or even route the "ignored" IPs to other parts of the diagram.
 
-That just leaves `display accepted lines`.  In his example, Bob Corrick decided to use the `ShowText` component.  This component puts up its output in a separate window, and requires an IIP with port name `TITLE`.  `ShowText` has an optional port called `OUT` - if this is connected, incoming IPs arev routed to this port after being displayed.
+That just leaves `display accepted lines`.  In his example, Bob Corrick decided to use the `ShowText` component.  This component puts up its output in a separate window, and requires an IIP with port name `TITLE`.  `ShowText` has an optional port called `OUT` - if this is connected, incoming IPs are routed to this port after being displayed.
 
 Here is the final diagram:
 
 ![Diagram with components and IIPs filled in](docs/Step5.png)
+
+## Step6.  Generating a running program
+
+Now we have all the necessary information filled in to generate a running program, so click on `Generate Java Network` - Java is the default language, so this function has `Java` filled in. This can be changed by clicking on `Select Diagram Language`: currently 4 languages are supported - Java, C#, JSON and FBP.
+
+**TODO: There seems to be a problem with the outport of the leftmost block - needs to be fixed!  See issue #2**
 
 
 
