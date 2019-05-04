@@ -87,9 +87,11 @@ Here is the final diagram:
 
 ## Step6.  Generating a running program
 
-Now we have all the necessary information filled in to generate a running program, so click on `Generate Java Network` - Java is the default language, so this function has `Java` filled in. This can be changed by clicking on `Select Diagram Language`: currently 4 languages are supported - Java, C#, JSON and FBP.
+Now we have all the necessary information filled in to generate a running program, so click on `Generate Java Network` - Java is the default language, so this function has `Java` filled in in the File menu. This can be changed by clicking on `Select Diagram Language`: currently 4 languages are supported - Java, C#, JSON and FBP.
 
-**TODO: There seems to be a problem with the outport of the first IIP - needs to be fixed!  See issue #4**
+Here is the result:
+
+![Generated Java program](docs/Step5_code.png)
 
 
 
