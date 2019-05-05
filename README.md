@@ -93,5 +93,7 @@ Here is the result:
 
 ![Generated Java program](docs/Step5_code.png)
 
+DrawFBP remembers the last used package name, so it allows the developer to change it to whatever matches the directory structure - or Eclipse will prompt him/her to change it, if necessary, when the code is executed. 
+
 
 
