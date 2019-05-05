@@ -95,5 +95,9 @@ Here is the result:
 
 DrawFBP remembers the last used package name, so it allows the developer to change it to whatever matches the directory structure - or Eclipse will prompt him/her to change it, if necessary, when the code is executed. 
 
+DrawFBP's colouring of code is mostly to make character strings and comments stand out from the rest of the text.
+
+This code is a standard JavaFBP network, and can be executed as described in https://github.com/jpaulm/javafbp/blob/master/README.md .
+
 
 
