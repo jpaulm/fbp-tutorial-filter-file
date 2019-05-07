@@ -99,7 +99,11 @@ DrawFBP remembers the last used package name, so it allows the developer to chan
 
 DrawFBP's colouring of code is mostly to make character strings and comments stand out from the rest of the text.
 
-This code is a standard JavaFBP network, and can be executed as described in https://github.com/jpaulm/javafbp/blob/master/README.md .
 
+## Step7.  Running the program
+
+The generated code shown above is a standard JavaFBP network, and can be executed as described in https://github.com/jpaulm/javafbp/blob/master/README.md .
+
+Nearly forgot - we need to give it some data: ReadFile handles any sequential file.  In this case we are pointing it at a CSV file ( https://en.wikipedia.org/wiki/Comma-separated_values ), and the selected records will apear in a separate window. 
 
 
