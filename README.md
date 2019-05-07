@@ -39,7 +39,7 @@ The captions `accepted` and `rejected` are generated using a block type in DrawF
 
 For the filter function, we need a component that will match the first character against a character provided as a parameter. As it happens, JavaFBP provides a precoded, reusable FBP component called `StartsWith`, which takes a character string as its parameter (specified using an IIP), and whose output port names are ACC and REJ.  
 
-How do we find a suitable component?  Well, the first step is to install JavaFBP ( https://github.com/jpaulm/javafbp ) in a directory called `javafbp`.  The `javafbp/build/docs/javadoc` directory contains a list of components grouped by function, so we plan to provide a more FBP-oriented facility, which should be available shortly.  `http://htmlpreview.github.io/?https://github.com/jpaulm/javafbp/blob/master/compList.html`- then `Edit/Find in This Page` .
+How do we find a suitable component?  Well, the first step is to install JavaFBP ( https://github.com/jpaulm/javafbp ) in a directory called `javafbp`.  The `javafbp/build/docs/javadoc` directory contains a list of components grouped by function, so we plan to provide a more FBP-oriented facility, which should be available shortly.  Not complete: http://htmlpreview.github.io/?https://github.com/jpaulm/javafbp/blob/master/compList.html then `Edit/Find in This Page` .
 
 **TODO: javadoc doesn't show port names and their functions! See issue #1.**
 
