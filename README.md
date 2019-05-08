@@ -37,15 +37,15 @@ The captions `accepted` and `rejected` are generated using a block type in DrawF
 
 ## Step3. Assigning a component to the filter block
 
-For the filter function, we need a component that will match the first character against a character provided as a parameter. As it happens(!), JavaFBP provides a precoded, reusable FBP component called `StartsWith`, which takes a character string as its parameter (specified using an IIP), and whose output port names are ACC and REJ.  **FBP is not designed to be a coding language**.  The ideal is to work with a library of precoded, prestested components.  **You only need to write a component if you can't find an appropriate one - and in that case, you should try to write one that other people will find useful.**
+For the filter function, we need a component that will match the first character against a character provided as a parameter. As it happens(!), JavaFBP provides a precoded, reusable FBP component called `StartsWith`, which takes a character string as its parameter (specified using an IIP), and whose output port names are ACC and REJ.  **FBP is not designed to be a coding language**.  The ideal is to work with a library of precoded, pretested components.  **You only need to write a component if you can't find an appropriate one - and in that case, you should try to write one that other people will find useful.**
 
 How do we find a suitable component?  Well, the first step is to install JavaFBP ( https://github.com/jpaulm/javafbp ) in a directory called `javafbp`.  The `javafbp/build/docs/javadoc` directory contains a list of components grouped by function, so we plan to provide a more FBP-oriented facility, which should be available shortly.  Not complete: http://htmlpreview.github.io/?https://github.com/jpaulm/javafbp/blob/master/compList.html then `Edit/Find in This Page` .
 
-**TODO: javadoc doesn't show port names and their functions! See issue #1.**
+**TODO: javadoc doesn't show port names and their functions! See issue #1. Facility currently under construction**
 
-We now have to associate the `StartsWith` component with the filter block.  Since the component is in JavaFBP, you will need to use DrawFBP's Locate JavaFBP Jar File function, and then find `StartsWith` in that jar file, using the using the Choose Component/Subnet Class block function provided by DrawFBP. 
+We now have to associate the `StartsWith` component with the filter block.  Since the component is in JavaFBP, you will need to use DrawFBP's `Locate JavaFBP Jar File` function, and then find `StartsWith` in that jar file, using the using the `Choose Component/Subnet Class` block function provided by DrawFBP. 
 
-Since different components specify different port names, you need to find out the port names used by StartsWith.  Right now (Apr. 2019) there is no convenient mechanism to find this out (this should be available in the Javadoc, but it isn't! See issue #1). For now, you therefore have two mechanisms:
+Since different components specify different port names, you need to find out the port names used by `StartsWith`.  Right now (Apr. 2019) there is no convenient mechanism to find this out (see issue #1). For now, you therefore have two possible ways to do this:
 
 - go to the source code for the component in the JavaFBP repo ( `src/main/java/com/jpaulmorrison/fbp/core` ), and look at the annotations (`@OutPorts` and `@InPorts`), or 
 
@@ -55,7 +55,7 @@ Since different components specify different port names, you need to find out th
 
 Of course, if you haven't filled in any of the port names, this display will show `NO` in the `Connected?` column.
 
-**TODO: Port display for many components are missing functions of ports - these need to be filled in in JavaFBP.  See issue #2**
+**TODO: Port display for many components are missing port function annotations - these need to be filled in in JavaFBP.  See issue #2**
 
 After filling in the `IN`, `ACC` and `REJ` port names, the diagram should now look like this:
 
@@ -63,11 +63,11 @@ After filling in the `IN`, `ACC` and `REJ` port names, the diagram should now lo
 
 If any port names have been misspelled, you will see a port name `Missing`, and another one unrecognized (`?` under `Connected?`).
 
-## Step4.  Adding an IIP
+## Step4.  Specifying an IIP
 
-Now, as shown in the port list shown above, `TEST` is the port name for the IIP specifying the test character for matching. As stated above, IIPs are the way FBP reusable components are parameterized.  Usually the parameter is specified in a network definition, so that a network can use the same component in more than one place in the network - with different parameters - but IIPs have the added advantage that the network can easily be changed to present the parameter information as a data chunk (normal IP), obtained from an upstream process.
+Now, as shown in the port list shown above, `TEST` is the port name for the IIP which specifies the test character for matching. As stated above, IIPs are the way FBP reusable components are parameterized.  Usually the parameter is specified in a network definition, so that a network can use the same component in more than one place in the network - with different parameters - but IIPs have the added advantage that the network can easily be changed to present the parameter information as a normal IP, obtained from an upstream process.
 
-In this case the parameter for `StartsWith` will be provided as an IIP, so we now have to add it to the diagram.  In DrawFBP just click on the button at the bottom marked `Initial IP`, and clicking on the drawing screen will now create an IIP, and allow some text to be entered.  The diagram now looks like this:
+In this case the parameter for `StartsWith` will be provided as an IIP, specified in the diagram.  In DrawFBP just click on the button at the bottom marked `Initial IP`, after which clicking on the drawing screen will now create an IIP, and allow some text to be entered.  The diagram now looks like this:
 
 ![Diagram with IIP](docs/Step4.png)
 
