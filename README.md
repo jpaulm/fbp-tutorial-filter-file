@@ -45,7 +45,7 @@ How do we find a suitable component?  Well, the first step is to install JavaFBP
 
 We now have to associate the `StartsWith` component with the filter block.  Since the component is in JavaFBP, you will need to use DrawFBP's `Locate JavaFBP Jar File` function, and then find `StartsWith` in that jar file, using the using the `Choose Component/Subnet Class` block function provided by DrawFBP. 
 
-Since different components specify different port names, you need to find out the port names used by `StartsWith`.  Three ways are available to do this:
+Since different components specify different port names, you need to find out the port names used by `StartsWith`.  There are three ways available to do this:
 
 - go to the source code for the component in the JavaFBP repo ( `src/main/java/com/jpaulmorrison/fbp/core` ), and look at the annotations (`@OutPorts` and `@InPorts`), or 
 
