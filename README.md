@@ -41,7 +41,11 @@ For the filter function, we need a component that will match the first character
 
 How do we find a suitable component?  Well, the first step is to install JavaFBP ( https://github.com/jpaulm/javafbp ) in a directory called `javafbp`.  Components are grouped by function, so you can either go there directly, or click on http://htmlpreview.github.io/?https://github.com/jpaulm/javafbp/blob/master/compList.html then `Edit/Find in This Page` (unfortunately you cannot click on the `compList.html` file directly on GitHub).  The Javadoc facility does not provide the information you will need, so we will not be maintaining it in future releases.
 
-**TODO: javadoc doesn't show port names and their functions! See issue #1. Facility currently under construction**
+**TODO: javadoc doesn't show port names and their functions! See issue #1. Closed**
+
+Here is a portion of `compList`:
+
+![compList part](docs/compListPart.png)
 
 We now have to associate the `StartsWith` component with the filter block.  Since the component is in JavaFBP, you will need to use DrawFBP's `Locate JavaFBP Jar File` function, and then find `StartsWith` in that jar file, using the using the `Choose Component/Subnet Class` block function provided by DrawFBP. 
 
