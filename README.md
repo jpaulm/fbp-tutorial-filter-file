@@ -35,6 +35,8 @@ In this step we are going to add a filter function between the two blocks shown 
 
 The captions `accepted` and `rejected` are generated using a block type in DrawFBP called "Legend".
 
+When you are ready to add the filter function, you will of course need to delete the existing arrow - right click on the arrow itself, and select Delete.
+
 ## Step3. Assigning a component to the filter block
 
 For the filter function, we need a component that will match the first character against a character provided as a parameter. As it happens(!), JavaFBP provides a precoded, reusable FBP component called `StartsWith`, which takes a character string as its parameter (specified using an IIP), and whose output port names are ACC and REJ.  **FBP is not designed to be a coding language**.  The ideal is to work with a library of precoded, pretested components.  **You only need to write a component if you can't find an appropriate one - and in that case, you should try to write one that other people will find useful.**
