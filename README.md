@@ -120,7 +120,7 @@ Nearly forgot - we need to give it some data: ReadFile handles any sequential fi
 Building a component is relatively simple, but I would like to stress again that you can do a lot of the work involved in building an application without ever doing any coding!  Here is the `StartsWith` component:
 
 ```java
-  /*
+ /**
  * JavaFBP - A Java Implementation of Flow-Based Programming (FBP)
  * Copyright (C) 2009, 2016 J. Paul Morrison
  *
@@ -204,4 +204,13 @@ public class StartsWith extends Component {
   }
 }
 ```
-  
+
+As you can see, there are only four sections in a component's code:
+
+* copyright information if desired
+* import statements
+* annotations: component description and port information
+* class header and declares
+* two methods: 
+	* `execute()`
+	* `openPorts()`
