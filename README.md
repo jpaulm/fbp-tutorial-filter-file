@@ -119,7 +119,7 @@ Nearly forgot - we need to give it some data: ReadFile handles any sequential fi
 
 Building a component is relatively simple, but I would like to stress again that you can do a lot of the work involved in building an application without ever doing any coding!  Here is the `StartsWith` component:
 
-<code>
+```java
   /*
  * JavaFBP - A Java Implementation of Flow-Based Programming (FBP)
  * Copyright (C) 2009, 2016 J. Paul Morrison
@@ -203,5 +203,5 @@ public class StartsWith extends Component {
 
   }
 }
-</code>
+```
   
