@@ -35,11 +35,13 @@ In this step we are going to add a filter function between the two blocks shown 
 
 The captions `accepted` and `rejected` are generated using a block type in DrawFBP called "Legend".
 
+When you are ready to add the filter function, you will of course need to delete the existing arrow - right click on the arrow itself, and select Delete.
+
 ## Step3. Assigning a component to the filter block
 
 For the filter function, we need a component that will match the first character against a character provided as a parameter. As it happens(!), JavaFBP provides a precoded, reusable FBP component called `StartsWith`, which takes a character string as its parameter (specified using an IIP), and whose output port names are ACC and REJ.  **FBP is not designed to be a coding language**.  The ideal is to work with a library of precoded, pretested components.  **You only need to write a component if you can't find an appropriate one - and in that case, you should try to write one that other people will find useful.**
 
-How do we find a suitable component?  Well, the first step is to install JavaFBP ( https://github.com/jpaulm/javafbp ) in a directory called `javafbp`.  Components are grouped by function, so you can either go there directly, or click on http://htmlpreview.github.io/?https://github.com/jpaulm/javafbp/blob/master/compList.html then `Edit/Find in This Page` (unfortunately you cannot click on the `compList.html` file directly on GitHub).  The Javadoc facility does not provide the information you will need, so we will not be maintaining it in future releases.
+How do we find a suitable component?  Well, the first step is to install JavaFBP ( https://github.com/jpaulm/javafbp ) in a directory called `javafbp`.  Components are grouped by function, so you can either go there directly, or you can display the JavaFBP components list by clicking on http://htmlpreview.github.io/?https://github.com/jpaulm/javafbp/blob/master/compList.html then `Edit/Find in This Page` (unfortunately you cannot click on the `compList.html` file directly on GitHub).  The Javadoc facility does not provide the information you will need, so we will not be maintaining it in future releases.
 
 **TODO: javadoc doesn't show port names and their functions! See issue #1. Closed**
 
@@ -113,3 +115,104 @@ The generated code shown above is a standard JavaFBP network, and can be execute
 Nearly forgot - we need to give it some data: ReadFile handles any sequential file.  In this case we are pointing it at a CSV file ( https://en.wikipedia.org/wiki/Comma-separated_values ), and the selected records will appear in a separate window. 
 
 
+## Step8.  What does a component look like?
+
+Building a component is relatively simple, but I would like to stress again that you can do a lot of the work involved in building an application without ever doing any coding!  Here is the `StartsWith` component:
+
+```java
+ /**
+ * JavaFBP - A Java Implementation of Flow-Based Programming (FBP)
+ * Copyright (C) 2009, 2016 J. Paul Morrison
+ *
+ * This library is free software; you can redistribute it and/or
+ * modify it under the terms of the GNU Library General Public
+ * License as published by the Free Software Foundation; either
+ * version 3.0 of the License, or (at your option) any later version.
+ *
+ * This library is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. 
+ *
+ * You should have received a copy of the GNU Library General Public
+ * License along with this library; if not, see the GNU Library General Public License v3
+ * at https://www.gnu.org/licenses/lgpl-3.0.en.html for more details.
+ */
+
+package com.jpaulmorrison.fbp.core.components.text;
+
+
+import com.jpaulmorrison.fbp.core.engine.Component;
+import com.jpaulmorrison.fbp.core.engine.ComponentDescription;
+import com.jpaulmorrison.fbp.core.engine.InPort;
+import com.jpaulmorrison.fbp.core.engine.InPorts;
+import com.jpaulmorrison.fbp.core.engine.InputPort;
+import com.jpaulmorrison.fbp.core.engine.OutPort;
+import com.jpaulmorrison.fbp.core.engine.OutPorts;
+import com.jpaulmorrison.fbp.core.engine.OutputPort;
+import com.jpaulmorrison.fbp.core.engine.Packet;
+
+
+/**
+ * Select packets starting with specified string.  
+ */
+@ComponentDescription("Select packets starting with specified string")
+
+@OutPorts({ @OutPort(value = "ACC", description = "IPs accepted by filter"), 
+	@OutPort(value = "REJ", description = "IPs rejected by filter") })
+@InPorts({ @InPort(value = "IN", description = "input stream"), 
+	@InPort(value = "TEST", description = "char string being tested against") })
+
+public class StartsWith extends Component {
+
+  
+  private InputPort inport, testport;
+
+  private OutputPort accport, rejport;
+
+  @Override
+  protected void execute() {
+
+    Packet<?> testPkt = testport.receive();
+    if (testPkt == null) {
+      return;
+    }
+    String testStr = (String) testPkt.getContent();
+    testport.close();
+    drop(testPkt);
+
+    Packet<?> p = inport.receive();
+    while (p != null) {
+      String content = (String) p.getContent();
+      if (content.startsWith(testStr)) {
+        accport.send(p);
+      } else {
+        rejport.send(p);
+      }
+      p = inport.receive();
+    }
+  }
+
+  @Override
+  protected void openPorts() {
+
+    inport = openInput("IN");
+    testport = openInput("TEST");
+
+    accport = openOutput("ACC");
+    rejport = openOutput("REJ");
+
+  }
+}
+```
+
+As you can see, there are only four sections in a component's code:
+
+* copyright information if desired
+* import statements
+* annotations: component description and port information
+* class header and declares
+* two methods: 
+	* `execute()`
+	* `openPorts()`
+	
+`openports()` is invoked for each JavaFBP process once per run of the network; `execute()` is invoked for each *activation* of a process (see the description of FBP scheduling in the book on Flow-Based Programming). 
