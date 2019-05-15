@@ -107,7 +107,7 @@ DrawFBP remembers the last used package name, so it allows the developer to chan
 
 DrawFBP's colouring of code is mostly to make character strings and comments stand out from the rest of the text.
 
-`component` and `connect` are self-explanatory! `initialize` builds an IIP.
+`component` and `connect` are self-explanatory! `initialize` builds an IIP, and connects it to an input port of a component.
 
 
 ## Step7.  Running the program
