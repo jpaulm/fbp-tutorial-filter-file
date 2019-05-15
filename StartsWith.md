@@ -101,3 +101,5 @@ As you can see, there are only four sections in a component's code:
 	* `openPorts()`
 	
 `openports()` is invoked for each JavaFBP process once per run of the network; `execute()` is invoked for each *activation* of a process (see the description of FBP scheduling in the book on Flow-Based Programming). 
+
+All JavaFBP components have this structure.
