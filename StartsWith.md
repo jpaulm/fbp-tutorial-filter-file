@@ -1,4 +1,6 @@
-Code for a simple "filter" component: it tests the first characters of every incoming Information Packet (IP) against a string of characters specified in an IIP which is `receive`d at port `TEST`.  
+## Code for a simple "filter" component.
+
+This component tests the first characters of every incoming Information Packet (IP) against a string of characters specified in an IIP which is `receive`d at port `TEST`.  
 
 *Accepted* IPs are sent to port `ACC`; *rejected* IPs are sent to port `REJ`.
 
