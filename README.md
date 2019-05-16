@@ -131,6 +131,6 @@ This style of development is usually called "top-down", but other "directions" h
 
 Another "direction" is one I call "centre out": again from my book: " ... the 'centre out' development approach – you can get the core logic working first, and then add formatting, input editing, etc., later."
 
-FBP also lends itself very well to rapid prototyping, and simulation as well - see the discussion about simulation systems in Chapter I of my book - http://www.jpaulmorrison.com/fbp/intro.shtml .  You can also start with a *simulation* of your application, and gradually replace the blocks with real application functions. 
+FBP also lends itself very well to rapid prototyping, and simulation as well - see the discussion about simulation systems in [Chapter I of my book](http://www.jpaulmorrison.com/fbp/intro.shtml) .  You can also start with a *simulation* of your application, and gradually replace the blocks with real application functions. 
 
 
