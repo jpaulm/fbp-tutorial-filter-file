@@ -6,6 +6,8 @@ Flow-Based Programming (FBP) uses a "data processing factory" metaphor for desig
 
 FBP is a special case of dataflow programming characterized by asynchronous, concurrent processes "under the covers", Information Packets with defined lifetimes, named ports, "bounded buffer" connections, and definition of connections external to the components - it has been found to support improved development time and maintainability, reusability, rapid prototyping, simulation, improved performance, and good communication among developers, maintenance staff, users, systems people, and management - not to mention that FBP naturally takes advantage of multiple cores... without the programmer having to struggle with the intricacies of multitasking!
 
+During FBP's early days, networks were coded by hand, and initially we used pencil and paper, followed by more sophisticated graphical tools, whether or not they played well with FBP software. However, with the advent of good graphical support, we now have a powerful graphical tool [DrawFBP](https://github.com/jpaulm/drawfbp), and in recent years the emphasis has been shifting to doing the diagramming on-line, and then generating the networks (we can see this progression with other flow tools on the market). Now that compile and run functions have been added to DrawFBP, the developer can do much of the development graphically, and on-line. 
+
 This tutorial introduces the reader to the concepts of Flow-Based Programming, by means of diagrams built using DrawFBP ( https://github.com/jpaulm/drawfbp ), a diagramming tool specifically oriented towards flow-based design and development, in which the reader is led through the stages of designing networks, generating Java networks from them, and running the generated Java code, using precoded components, and (later) user-written components.  This example was originally developed by my collaborator, Bob Corrick.
 
 Almost all data in FBP is managed as "chunks" called "Information Packets (IPs)", with well-defined lifetimes (from creation to disposition), and unique ownership - an IIP can only be owned by one process, unless it is in transit between processes.  A special type of IP is called an "Initial Information Packet (IIP)", and refers to the technique FBP uses to parameterize components - IIPs are specified in the network definition, but are converted into normal IPs when they are *received* by a process. 
@@ -17,7 +19,7 @@ Here is a possible diagram, showing a simple application which displays the cont
 
 ![High level diagram](docs/Step1.png)
 
-To execute this step of the tutorial, you will need to install DrawFBP ( https://github.com/jpaulm/drawfbp ), and draw this diagram.
+To execute this step of the tutorial, you will need to install DrawFBP, and draw this diagram.
 
 Save the result in a work directory of your choice.  If you open it using Wordpad, it should look like the file you get when you click on [this link](docs/Step1.drw).
 
@@ -49,7 +51,7 @@ Here is a portion of `compList`:
 
 ![compList part](docs/compListPart.png)
 
-We now have to associate the `StartsWith` component with the filter block.  Since the component is in JavaFBP, you will need to use DrawFBP's `Locate JavaFBP Jar File` function, and then find `StartsWith` in that jar file, using the using the `Choose Component/Subnet Class` block function provided by DrawFBP. 
+We now have to associate the `StartsWith` component with the filter block.  Since the component is in JavaFBP, you will need to use DrawFBP's `Locate JavaFBP Jar File` function, and then find `StartsWith` in that jar file, using the `Choose Component/Subnet Class` block function provided by DrawFBP. 
 
 Since different components specify different port names, you need to find out the port names used by `StartsWith`.  There are three ways available to do this:
 
@@ -119,6 +121,34 @@ Nearly forgot - we need to give it some data: ReadFile handles any sequential fi
 
 ## Step8.  What does a component look like?
 
-Building a component is relatively simple, but I would like to stress again that you can do a lot of the work involved in building an application without ever doing any coding!  To see the JavaFBP `StartsWith` component, click on [this link](StartsWith.md).
+Building a component is relatively simple, but I would like to stress again that you can do a lot of the work involved in building an application without ever doing any coding!  However, if you are interested, you can click on [this link](StartsWith.md).  Theoretically you can write components in any language that has an FBP implementation, but you may find yourself having to be creative to get different languages to intercommunicate... especially languages that are implemented by means of a virtual machine.  We will be showing you how to do this later on in the tutorial.
+
+## Step 9. Design "directions"
+
+As you may have intuited, in FBP we like to go from a high-level design to progressively lower levels, until we are ready to start filling in component names.  High-level components can also be replaced with what are called "subnets": diagrams with "sticky" connections, that can both function as components but can be further broken down.  This keeps the visual mode of FBP without having huge networks with dozens of blocks in a single chart.  In fact DrawFBP has a facility called "Excise" where the designer marks off a section of the diagram and "excises" it, forming a subnet and replacing the excised subnet with a single block that instantiates the subnet.  The sticky ends are called "External Ports" - more about them later.
+
+This style of development is usually called "top-down", but other "directions" have been found useful as well.  This section is from my book:
+
+"... The data streams which tend to drive all the others are the ones which humans will see, e.g. reports, etc., so you design these first. Then you design the processes which generate these, then the processes which generate their input, and so on. This approach to design might be called 'output backwards'...." 
+
+Another "direction" is one I call "centre out": again from my book: " ... the 'centre out' development approach – you can get the core logic working first, and then add formatting, input editing, etc., later."
+
+FBP also lends itself very well to rapid prototyping, and simulation as well - see the discussion about simulation systems in [Chapter I of my book](http://www.jpaulmorrison.com/fbp/intro.shtml) .  You can also start with a *simulation* of your application, and gradually replace the blocks with real application functions. 
+
+## Step10. Extending the diagram
+
+For this step we will stay at the diagram level - these changes could of course be made to the *generated code*, but then the code would become progressively more out of step with the diagram, which is perhaps the most important tool of communication between the various groups involved in the development of an application.
+
+Let us now suppose that we want to count the number of rejected IPs before discarding them.  Surprise!  We happen to have a Counter component in our bag of tricks: a count IP goes to one output port, incoming IPs are routed to the other (optional) output port.  
+
+Here is the modified diagram (we are showing it without the components filled in - to stress that this is happening at the high level design stage):
+
+![Diagram with added counter](docs/Step10.png)
+
+Here is the segment of [compList](http://htmlpreview.github.io/?https://github.com/jpaulm/javafbp/blob/master/compList.html) that gives the port names for Counter:
+
+![Counter](docs/counter.png)
+
+
 
 

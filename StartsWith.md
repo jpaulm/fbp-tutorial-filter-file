@@ -1,3 +1,9 @@
+## Code for a simple "filter" component.
+
+This component tests the first characters of every incoming Information Packet (IP) against a string of characters specified in an IIP which is `receive`d at port `TEST`.  
+
+*Accepted* IPs are sent to port `ACC`; *rejected* IPs are sent to port `REJ`.
+
 ```java
  /**
  * JavaFBP - A Java Implementation of Flow-Based Programming (FBP)
@@ -89,9 +95,11 @@ As you can see, there are only four sections in a component's code:
 * copyright information if desired
 * import statements
 * annotations: component description and port information
-* class header and declares
+* class header and declares for input and output ports
 * two methods: 
 	* `execute()`
 	* `openPorts()`
 	
 `openports()` is invoked for each JavaFBP process once per run of the network; `execute()` is invoked for each *activation* of a process (see the description of FBP scheduling in the book on Flow-Based Programming). 
+
+All JavaFBP components have this structure.
