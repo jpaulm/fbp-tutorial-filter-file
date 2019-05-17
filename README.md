@@ -141,11 +141,9 @@ For this step we will stay at the diagram level - these changes could of course 
 
 Let us now suppose that we want to count the number of rejected IPs before discarding them.  Surprise!  We happen to have a Counter component in our bag of tricks: a count IP goes to one output port, incoming IPs are routed to the other (optional) output port.  
 
-Here is the modified diagram (we are showing it without the components filled in - to stress that this is happening at the high level design stage):
+Here is the modified diagram (we are showing it without the components or port names filled in - to stress that this is happening at the high level design stage):
 
 ![Diagram with added counter](docs/Step10.png)
-
-As we haven't decided on actual components at this stage, we can't really fill in the port names... although I'm sure you can guess most of them! 
 
 Here is the segment of [compList](http://htmlpreview.github.io/?https://github.com/jpaulm/javafbp/blob/master/compList.html) that gives the port names for Counter:
 
