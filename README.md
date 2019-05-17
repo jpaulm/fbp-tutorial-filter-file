@@ -19,7 +19,7 @@ Here is a possible diagram, showing a simple application which displays the cont
 
 ![High level diagram](docs/Step1.png)
 
-To execute this step of the tutorial, you will need to install DrawFBP ( https://github.com/jpaulm/drawfbp ), and draw this diagram.
+To execute this step of the tutorial, you will need to install DrawFBP, and draw this diagram.
 
 Save the result in a work directory of your choice.  If you open it using Wordpad, it should look like the file you get when you click on [this link](docs/Step1.drw).
 
@@ -134,5 +134,21 @@ This style of development is usually called "top-down", but other "directions" h
 Another "direction" is one I call "centre out": again from my book: " ... the 'centre out' development approach – you can get the core logic working first, and then add formatting, input editing, etc., later."
 
 FBP also lends itself very well to rapid prototyping, and simulation as well - see the discussion about simulation systems in [Chapter I of my book](http://www.jpaulmorrison.com/fbp/intro.shtml) .  You can also start with a *simulation* of your application, and gradually replace the blocks with real application functions. 
+
+## Step10. Extending the diagram
+
+For this step we will stay at the diagram level - these changes could of course be made to the *generated code*, but then the code would become progressively more out of step with the diagram, which is perhaps the most important tool of communication between the various groups involved in the development of an application.
+
+Let us now suppose that we want to count the number of rejected IPs before discarding them.  Surprise!  We happen to have a Counter component in our bag of tricks: a count IP goes to one output port, incoming IPs are routed to the other (optional) output port.  
+
+Here is the modified diagram (we are showing it without the components filled in - to stress that this is happening at the high level design stage):
+
+![Diagram with added counter](docs/Step10.png)
+
+Here is the segment of [compList](http://htmlpreview.github.io/?https://github.com/jpaulm/javafbp/blob/master/compList.html) that gives the port names for Counter:
+
+![Counter](docs/counter.png)
+
+
 
 
