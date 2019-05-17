@@ -149,6 +149,10 @@ Here is the segment of [compList](http://htmlpreview.github.io/?https://github.c
 
 ![Counter](docs/counter.png)
 
+As you have probably figured out, the counter *creates* a count IP and sends it out.
+
+As we haven't decided on actual components at this stage, we can't really fill in the port names... although I'm sure you can guess most of them! 
+
 
 
 
