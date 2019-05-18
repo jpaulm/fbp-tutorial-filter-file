@@ -151,8 +151,13 @@ Here is the segment of [compList](http://htmlpreview.github.io/?https://github.c
 
 As you have probably figured out, the counter *creates* a count IP and sends it out.  
 
-You will have noticed that port `OUT` is marked *optional*.  `Counter` tests if this port is connected - and, if not, it discards IPs that are sent to this port.
+Port `OUT` is marked *optional*.  `Counter` tests if this port is connected - and, if not, it discards IPs that are sent to this port. In what follows, we will drop the `Ignore` block.
 
+## Step11. Combining the outputs
+
+Now you will have noticed that there are two `Display` blocks - if you use a windowing component like `ShowText`, you will see two windows; if you use console components the outputs may be intermingled - remember that FBP is totally asynchronous. So maybe we want to combine the outputs, with the count following the accepted IPs.  Our first attempt might look like this:
+
+![Combined outputs](docs/Step11.png)
 
 
 
