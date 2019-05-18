@@ -6,7 +6,7 @@ Flow-Based Programming (FBP) uses a "data processing factory" metaphor for desig
 
 FBP is a special case of dataflow programming characterized by asynchronous, concurrent processes "under the covers", Information Packets with defined lifetimes, named ports, "bounded buffer" connections, and definition of connections external to the components - it has been found to support improved development time and maintainability, reusability, rapid prototyping, simulation, improved performance, and good communication among developers, maintenance staff, users, systems people, and management - not to mention that FBP naturally takes advantage of multiple cores... without the programmer having to struggle with the intricacies of multitasking!
 
-During FBP's early days, networks were coded by hand, and initially we used pencil and paper, followed by more sophisticated graphical tools, whether or not they played well with FBP software. However, with the advent of good graphical support, we now have a powerful graphical tool [DrawFBP](https://github.com/jpaulm/drawfbp), and in recent years the emphasis has been shifting to doing the diagramming on-line, and then generating the networks (we can see this progression with other flow tools on the market). Now that compile and run functions have been added to DrawFBP, the developer can do much of the development graphically, and on-line. 
+During FBP's early days, networks were coded by hand, and initially we used pencil and paper, followed by more sophisticated graphical tools, whether or not they played well with FBP software. However, with the advent of good graphical support, we now have the powerful graphical tool [DrawFBP](https://github.com/jpaulm/drawfbp), and in recent years the emphasis has been shifting to doing the diagramming on-line, and then generating the networks (we can see this progression with other flow tools on the market). Now that compile and run functions have been added to DrawFBP, the developer can do much of the development graphically, and on-line. 
 
 This tutorial introduces the reader to the concepts of Flow-Based Programming, by means of diagrams built using DrawFBP ( https://github.com/jpaulm/drawfbp ), a diagramming tool specifically oriented towards flow-based design and development, in which the reader is led through the stages of designing networks, generating Java networks from them, and running the generated Java code, using precoded components, and (later) user-written components.  This example was originally developed by my collaborator, Bob Corrick.
 
@@ -141,18 +141,23 @@ For this step we will stay at the diagram level - these changes could of course 
 
 Let us now suppose that we want to count the number of rejected IPs before discarding them.  Surprise!  We happen to have a Counter component in our bag of tricks: a count IP goes to one output port, incoming IPs are routed to the other (optional) output port.  
 
-Here is the modified diagram (we are showing it without the components filled in - to stress that this is happening at the high level design stage):
+Here is the modified diagram (we are showing it without the components or port names filled in - to stress that this is happening at the high level design stage):
 
 ![Diagram with added counter](docs/Step10.png)
-
-As we haven't decided on actual components at this stage, we can't really fill in the port names... although I'm sure you can guess most of them! 
 
 Here is the segment of [compList](http://htmlpreview.github.io/?https://github.com/jpaulm/javafbp/blob/master/compList.html) that gives the port names for Counter:
 
 ![Counter](docs/counter.png)
 
-As you have probably figured out, the counter *creates* a count IP and sends it out.
+As you have probably figured out, the counter *creates* a count IP and sends it out.  
 
+Port `OUT` is marked *optional*.  `Counter` tests if this port is connected - and, if not, it discards IPs that are sent to this port. In what follows, we will drop the `Ignore` block.
+
+## Step11. Combining the outputs
+
+Now you will have noticed that there are two `Display` blocks - if you use a windowing component like `ShowText`, you will see two windows; if you use console components the outputs may be intermingled - remember that FBP is totally asynchronous. So maybe we want to combine the outputs, with the count following the accepted IPs.  Our first attempt might look like this:
+
+![Combined outputs](docs/Step11.png)
 
 
 
