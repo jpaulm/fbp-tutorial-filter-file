@@ -149,7 +149,9 @@ Here is the segment of [compList](http://htmlpreview.github.io/?https://github.c
 
 ![Counter](docs/counter.png)
 
-As you have probably figured out, the counter *creates* a count IP and sends it out.
+As you have probably figured out, the counter *creates* a count IP and sends it out.  
+
+You will have noticed that port `OUT` is marked *optional*.  `Counter` tests if this port is connected - and, if not, it discards IPs that are sent to this port.
 
 
 
