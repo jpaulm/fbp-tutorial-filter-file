@@ -1,0 +1,42 @@
+<?xml version="1.0"?> 
+ <drawfbp_file xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:noNamespaceSchemaLocation="https://github.com/jpaulm/drawfbp/blob/master/lib/drawfbp_file.xsd"><net><desc>Merging displays</desc> <complang>C#</complang> <clicktogrid>false</clicktogrid> 
+<blocks><block> <x> 547 </x> <y> 198 </y> <id> 32 </id> <type>L</type> <width>82</width> <height>38</height> <description>rejected</description> <multiplex>false</multiplex><invisible>false</invisible><issubnet>false</issubnet> 
+</block> 
+<block> <x> 250 </x> <y> 161 </y> <id> 48 </id> <type>B</type> <width>92</width> <height>64</height> <description>read
+sample
+file</description> <multiplex>false</multiplex><invisible>false</invisible><issubnet>false</issubnet> 
+</block> 
+<block> <x> 411 </x> <y> 161 </y> <id> 4 </id> <type>B</type> <width>92</width> <height>64</height> <description>filter by
+first letter</description> <multiplex>false</multiplex><invisible>false</invisible><issubnet>false</issubnet> 
+</block> 
+<block> <x> 434 </x> <y> 79 </y> <id> 38 </id> <type>I</type> <width>18</width> <height>18</height> <description>J</description> <multiplex>false</multiplex><invisible>false</invisible><issubnet>false</issubnet> 
+</block> 
+<block> <x> 583 </x> <y> 247 </y> <id> 56 </id> <type>B</type> <width>92</width> <height>64</height> <description>count</description> <multiplex>false</multiplex><invisible>false</invisible><issubnet>false</issubnet> 
+</block> 
+<block> <x> 248 </x> <y> 81 </y> <id> 43 </id> <type>I</type> <width>122</width> <height>18</height> <description>sample_data.csv</description> <multiplex>false</multiplex><invisible>false</invisible><issubnet>false</issubnet> 
+</block> 
+<block> <x> 751 </x> <y> 186 </y> <id> 75 </id> <type>B</type> <width>92</width> <height>64</height> <description>concatenate
+ streams</description> <multiplex>false</multiplex><invisible>false</invisible><issubnet>false</issubnet> 
+</block> 
+<block> <x> 893 </x> <y> 77 </y> <id> 45 </id> <type>I</type> <width>130</width> <height>18</height> <description>Accepted entries</description> <multiplex>false</multiplex><invisible>false</invisible><issubnet>false</issubnet> 
+</block> 
+<block> <x> 902 </x> <y> 186 </y> <id> 30 </id> <type>B</type> <width>92</width> <height>64</height> <description>display
+accepted
+lines</description> <multiplex>false</multiplex><invisible>false</invisible><issubnet>false</issubnet> 
+</block> 
+<block> <x> 546 </x> <y> 112 </y> <id> 31 </id> <type>L</type> <width>91</width> <height>38</height> <description>accepted</description> <multiplex>false</multiplex><invisible>false</invisible><issubnet>false</issubnet> 
+</block> 
+</blocks> <connections>
+<connection> <fromx>296</fromx> <fromy>161</fromy> <tox>365</tox> <toy>161</toy> <fromid>48</fromid> <toid>4</toid> <id>33</id> <endsatline>false</endsatline><segno>0</segno></connection> 
+<connection> <fromx>250</fromx> <fromy>90</fromy> <tox>250</tox> <toy>129</toy> <fromid>43</fromid> <toid>48</toid> <id>35</id> <endsatline>false</endsatline><segno>0</segno></connection> 
+<connection> <fromx>797</fromx> <fromy>187</fromy> <tox>856</tox> <toy>187</toy> <fromid>75</fromid> <toid>30</toid> <id>51</id> <endsatline>false</endsatline><upstreamport></upstreamport><downstreamport></downstreamport><segno>0</segno></connection> 
+<connection> <fromx>457</fromx> <fromy>144</fromy> <tox>705</tox> <toy>169</toy> <fromid>4</fromid> <toid>75</toid> <id>52</id> <endsatline>false</endsatline><downstreamport>IN[0]</downstreamport><segno>0</segno><bends> <bend> <x>616</x> <y> 144</y> </bend>
+ </bends> </connection> 
+<connection> <fromx>629</fromx> <fromy>245</fromy> <tox>705</tox> <toy>195</toy> <fromid>56</fromid> <toid>75</toid> <id>53</id> <endsatline>false</endsatline><upstreamport>OUT</upstreamport><downstreamport>IN[1]</downstreamport><segno>0</segno><bends> <bend> <x>656</x> <y> 245</y> </bend>
+ </bends> </connection> 
+<connection> <fromx>457</fromx> <fromy>171</fromy> <tox>584</tox> <toy>212</toy> <fromid>4</fromid> <toid>56</toid> <id>41</id> <endsatline>false</endsatline><segno>0</segno><bends> <bend> <x>584</x> <y> 171</y> </bend>
+ </bends> </connection> 
+<connection> <fromx>437</fromx> <fromy>88</fromy> <tox>413</tox> <toy>129</toy> <fromid>38</fromid> <toid>4</toid> <id>27</id> <endsatline>false</endsatline><segno>0</segno></connection> 
+<connection> <fromx>897</fromx> <fromy>86</fromy> <tox>898</tox> <toy>154</toy> <fromid>45</fromid> <toid>30</toid> <id>30</id> <endsatline>false</endsatline><segno>0</segno></connection> 
+</connections> </net> </drawfbp_file>
