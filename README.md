@@ -159,6 +159,7 @@ Now you will have noticed that there are two `Display` blocks - if you use a win
 
 ![Combined outputs](docs/Step11.png)
 
+The count cannot be generated until the inputs have all been read, so this diagram is pretty safe, but it is easy to visualize how the count could wind up intermixed with the "accepted" stream.  So we should really ensure that the count is displayed after all the accepted IPs have been displayed.  We do this using the `routing.ConcatStreams` component.
 
 
 
