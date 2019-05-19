@@ -163,6 +163,6 @@ The count cannot be generated until the inputs have all been read, so the variou
 
 ![Combined outputs](docs/Step11-2.png)
 
-`ConcatStreams` reads and outputs all of its first input, followed by the second input, and so on.  If `ConcatStreams` could only handle, say, two input streams, it might call them `IN1` and `IN2`, but it can handle any number, so it uses something called an "array port", and the individual connection points are labelled using an indexing notation, e.g. `IN[0]`, `IN[1]`, and so on.  
+`ConcatStreams` reads and outputs all of its first input, followed by the second input, and so on.  If `ConcatStreams` could only handle, say, two input streams, it might call them `IN1` and `IN2`, but it can handle any number, so it uses something called an "array port", and the individual connection points are labelled using an indexing notation, e.g. `IN[0]`, `IN[1]`, and so on.  Do a find for `ConcatStreams` in [compList](http://htmlpreview.github.io/?https://github.com/jpaulm/javafbp/blob/master/compList.html). 
 
 
