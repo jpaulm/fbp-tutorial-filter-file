@@ -163,6 +163,10 @@ The count cannot be generated until the inputs have all been read, so the variou
 
 ![Combined outputs](docs/Step11-2.png)
 
-`ConcatStreams` reads and outputs all of its first input, followed by the second input, and so on.  If `ConcatStreams` could only handle, say, two input streams, it might call them `IN1` and `IN2`, but it can handle any number, so it uses something called an "array port", and the individual connection points are labelled using an indexing notation, e.g. `IN[0]`, `IN[1]`, and so on.  Do a find for `ConcatStreams` in [compList](http://htmlpreview.github.io/?https://github.com/jpaulm/javafbp/blob/master/compList.html). 
+`ConcatStreams` reads and outputs all of its first input, followed by the second input, and so on.  If `ConcatStreams` could only handle, say, two input streams, it might call them `IN1` and `IN2`, but it can in fact handle any number, so it uses something called an "array port", and the individual connection points are labelled using an indexing notation, e.g. `IN[0]`, `IN[1]`, and so on.  Do a find for `ConcatStreams` in [compList](http://htmlpreview.github.io/?https://github.com/jpaulm/javafbp/blob/master/compList.html) to see how the ports are labelled. 
+
+Now this is a procedural description of `ConcatStreams`, but you can also look at it from a "stream" point of view: from this point of view it is a sort of "gate", ensuring that no IPs of the stream arriving at `IN[i + 1]` can be received until *all* the IPs arriving at `IN[i]` have been received. 
+
+I should point out that the resulting diagram has a type of "loop" topology - actually what I call "divergent-convegent" - and, if you have read my book, you will remember that this topology is a warning signal for possible "deadlocks"... so, be careful!  However, this kind of deadlock is *always* a design issue, so you will learn ways of safeguarding your network with regard to this possibility.  More about deadlocks in Step xx.
 
 
