@@ -16,16 +16,27 @@ Almost all data in FBP is managed as "chunks" called "Information Packets (IPs)"
 ## Step 1.  Draw high level diagram of app to display contents of file. 
 
 [Step1. Draw high level diagram of app to display contents of file.](Step1/Step1.md)
+
 [Step2. Add a filter function.](Step2/Step2.md)
+
 [Step3. Assigning a component to the filter block.](Step3/Step3.md)
+
 [Step4. Specifying an IIP.](Step4/Step4.md)
+
 [Step5. Associating components with the other blocks.](Step5/Step5.md)
+
 [Step6. Generating a running program.](Step6/Step6.md)
+
 [Step7. Running the program.](Step7/Step7.md)
+
 [Step8. What does a component look like?](Step8/Step8.md)
+
 [Step9. Design "directions".](Step9/Step9.md)
+
 [Step10. Extending the diagram.](Step10/Step10.md)
+
 [Step11. Combining the outputs.](Step11/Step11.md)
+
 
 ## Step2. Add a filter function 
 
