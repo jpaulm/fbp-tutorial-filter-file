@@ -16,4 +16,4 @@ Now at this point, you can simply assign real live components to the blocks in t
 
 Next:  [Step2. Add a filter function.](../Step2/Step2.md)
 
-Index: [Step2. Go to higher level.](../README.md)
+Index: [Go to higher level.](../README.md)
