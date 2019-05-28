@@ -15,3 +15,5 @@ At this point, you should take a look at the functions provided by DrawFBP.  Dra
 Now at this point, you can simply assign real live components to the blocks in the diagrams (plus IIPs and port names), and you will basically have a running program.  However, I am going to assume that you want to add a filter function between the two processes in the design phase (rather than later as the application "evolves"), so that is what we will do in Step2.
 
 Next:  [Step2. Add a filter function.](../Step2/Step2.md)
+
+Index: [Step2. Go to higher level.](../README.md)
