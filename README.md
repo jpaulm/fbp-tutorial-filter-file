@@ -12,7 +12,9 @@ This tutorial introduces the reader to the concepts of Flow-Based Programming, b
 
 Almost all data in FBP is managed as "chunks" called "Information Packets (IPs)", with well-defined lifetimes (from creation to disposition), and unique ownership - an IIP can only be owned by one process, unless it is in transit between processes.  A special type of IP is called an "Initial Information Packet (IIP)", and refers to the technique FBP uses to parameterize components - IIPs are specified in the network definition, but are converted into normal IPs when they are *received* by a process. 
 
+## Tutorial "Steps"
 
+[Step0. Setup.](Step0/Step0.md)
 
 [Step1. Draw high level diagram of app to display contents of file.](Step1/Step1.md)
 
