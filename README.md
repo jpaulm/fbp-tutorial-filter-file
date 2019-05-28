@@ -13,7 +13,6 @@ This tutorial introduces the reader to the concepts of Flow-Based Programming, b
 Almost all data in FBP is managed as "chunks" called "Information Packets (IPs)", with well-defined lifetimes (from creation to disposition), and unique ownership - an IIP can only be owned by one process, unless it is in transit between processes.  A special type of IP is called an "Initial Information Packet (IIP)", and refers to the technique FBP uses to parameterize components - IIPs are specified in the network definition, but are converted into normal IPs when they are *received* by a process. 
 
 
-## Step 1.  Draw high level diagram of app to display contents of file. 
 
 [Step1. Draw high level diagram of app to display contents of file.](Step1/Step1.md)
 
@@ -37,16 +36,6 @@ Almost all data in FBP is managed as "chunks" called "Information Packets (IPs)"
 
 [Step11. Combining the outputs.](Step11/Step11.md)
 
-
-## Step2. Add a filter function 
-
-In this step we are going to add a filter function between the two blocks shown above.  Filter functions (filters, for short) are commonly used in FBP, and conventionally have two outputs: *accepted* IPs, and *rejected* IPs.  Filters should not just drop rejected items, although they can be written this way - it is better for them to route rejected items to another process... which could very well just be a Discard process, if so desired.  In this case, we will do exactly that, as shown here.
-
-![Diagram showing filter](docs/Step2.png)
-
-The captions `accepted` and `rejected` are generated using a block type in DrawFBP called "Legend".
-
-When you are ready to add the filter function, you will of course need to delete the existing arrow - right click on the arrow itself, and select Delete.
 
 ## Step3. Assigning a component to the filter block
 
