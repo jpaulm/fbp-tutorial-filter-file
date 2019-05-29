@@ -42,27 +42,6 @@ Almost all data in FBP is managed as "chunks" called "Information Packets (IPs)"
 Following steps have not been factored out yet...
 
 
-## Step6.  Generating a running program
-
-Now we have all the necessary information filled in to generate a running program, so click on `Generate Java Network` - Java is the default language, so this function has `Java` filled in in the File menu. This can be changed by clicking on `Select Diagram Language`: currently 4 languages are supported - Java, C#, JSON and FBP.
-
-Here is the result:
-
-![Generated Java program](docs/Step6_code.png)
-
-DrawFBP remembers the last used package name, so it allows the developer to change it to whatever matches the directory structure - or Eclipse will prompt him/her to change it, if necessary, when the code is executed. 
-
-DrawFBP's colouring of code is mostly to make character strings and comments stand out from the rest of the text.
-
-`component` and `connect` are self-explanatory! `initialize` builds an IIP, and connects it to an input port of a component.
-
-
-## Step7.  Running the program
-
-The generated code shown above is a standard JavaFBP network, and can be executed as described in https://github.com/jpaulm/javafbp/blob/master/README.md .
-
-Nearly forgot - we need to give it some data: ReadFile handles any sequential file.  In this case we are pointing it at a CSV file ( https://en.wikipedia.org/wiki/Comma-separated_values ), and the selected records will appear in a separate window. 
-
 
 ## Step8.  What does a component look like?
 
