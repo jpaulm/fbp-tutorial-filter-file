@@ -95,7 +95,7 @@ As you can see, there are only four sections in a component's code:
 * copyright information if desired
 * import statements
 * annotations: component description and port information
-* class header and declares for input and output ports
+* class header and declares for input and output port instance variables
 * two methods: 
 	* `execute()`
 	* `openPorts()`
