@@ -31,3 +31,7 @@ At this point, you should locate the JavaFBP jar file (it can be found in `https
 ### Help facility
 
 The DrawFBP Help facility uses the standard `JavaHelp` facility, which you can download from Maven Central, by doing a search for the artifact called `javahelp` .  After downloading it and saving it, click on the DrawFBP function `File/Locate DrawFBP Help File`.   Once you tell DrawFBP where it is, DrawFBP will remember the location from then on.  
+
+Next:  [Step1. Draw high level diagram of app to display contents of file. ](../Step1/Step1.md)
+
+Index: [Go to higher level.](../README.md)

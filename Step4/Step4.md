@@ -7,3 +7,7 @@ In this case the parameter for `StartsWith` will be provided as an IIP, specifie
 ![Diagram with IIP](docs/Step4.png)
 
 Selecting `StartWith` and clicking on `Display Description and Port Info` will verify that all ports are now correctly connected.
+
+Next:  [Step5. Associating components with the other blocks.](../Step5/Step5.md)
+
+Index: [Go to higher level.](../README.md)
