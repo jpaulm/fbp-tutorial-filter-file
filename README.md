@@ -38,7 +38,3 @@ Almost all data in FBP is managed as "chunks" called "Information Packets (IPs)"
 
 [Step11. Combining the outputs.](Step11/Step11.md)
 
-
-
-
-
