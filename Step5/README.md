@@ -10,7 +10,7 @@ That just leaves `display accepted lines`.  In his example, Bob Corrick decided 
 
 Here is the final diagram:
 
-![Diagram with components and IIPs filled in](docs/Step5.png)
+![Diagram with components and IIPs filled in](Step5.png)
 
 Next:  [Step6. Generating a running program.](../Step6/Step6.md)
 

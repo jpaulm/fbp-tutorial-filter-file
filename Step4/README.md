@@ -4,7 +4,7 @@ Now, as shown in the port list shown above, `TEST` is the port name for the IIP 
 
 In this case the parameter for `StartsWith` will be provided as an IIP, specified in the diagram.  In DrawFBP just click on the button at the bottom marked `Initial IP`, after which clicking on the drawing screen will now create an IIP, and allow some text to be entered.  The diagram now looks like this:
 
-![Diagram with IIP](docs/Step4.png)
+![Diagram with IIP](Step4.png)
 
 Selecting `StartWith` and clicking on `Display Description and Port Info` will verify that all ports are now correctly connected.
 

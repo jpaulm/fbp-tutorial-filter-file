@@ -8,7 +8,7 @@ How do we find a suitable component?  Well, the first step is to install JavaFBP
 
 Here is a portion of `compList`:
 
-![compList part](docs/compListPart.png)
+![compList part](compListPart.png)
 
 We now have to associate the `StartsWith` component with the filter block.  Since the component is in JavaFBP, you will need to use DrawFBP's `Locate JavaFBP Jar File` function, and then find `StartsWith` in that jar file, using the `Choose Component/Subnet Class` block function provided by DrawFBP. 
 
@@ -18,7 +18,7 @@ Since different components specify different port names, you need to find out th
 
 - once you have associated a component with your block in the diagram, you can right click on the `Display Description and Port Info` function provided for DrawFBP blocks, which will bring up a display like the following (doing the associate function will also bring this up):
 
-![StartsWith ports](docs/StartsWith.png)
+![StartsWith ports](StartsWith.png)
 
 Of course, if you haven't filled in any of the port names, this display will show `NO` in the `Connected?` column.
 
@@ -28,7 +28,7 @@ Of course, if you haven't filled in any of the port names, this display will sho
 
 After filling in the `IN`, `ACC` and `REJ` port names, the diagram should now look like this:
 
-![Diagram using StartsWith](docs/Step3.png)
+![Diagram using StartsWith](Step3.png)
 
 If any port names have been misspelled, you will see a port name `Missing`, and another one unrecognized (`?` under `Connected?`).
 
