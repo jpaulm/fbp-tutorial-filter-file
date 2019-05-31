@@ -6,11 +6,11 @@ Let us now suppose that we want to count the number of rejected IPs before disca
 
 Here is the modified diagram (we are showing it without the components or port names filled in - to stress that this is happening at the high level design stage):
 
-![Diagram with added counter](docs/Step10.png)
+![Diagram with added counter](Step10.png)
 
 Here is the segment of [compList](http://htmlpreview.github.io/?https://github.com/jpaulm/javafbp/blob/master/compList.html) that gives the port names for Counter:
 
-![Counter](docs/counter.png)
+![Counter](counter.png)
 
 As you have probably figured out, the counter *creates* a count IP and sends it out.  
 

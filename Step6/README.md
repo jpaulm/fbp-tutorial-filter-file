@@ -4,7 +4,7 @@ Now we have all the necessary information filled in to generate a running progra
 
 Here is the result:
 
-![Generated Java program](docs/Step6_code.png)
+![Generated Java program](Step6_code.png)
 
 DrawFBP remembers the last used package name, so it allows the developer to change it to whatever matches the directory structure - or Eclipse will prompt him/her to change it, if necessary, when the code is executed. 
 
