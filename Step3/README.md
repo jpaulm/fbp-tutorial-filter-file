@@ -1,4 +1,4 @@
-<link href="style.css" rel="stylesheet"></link>
+<link href="../style.css" rel="stylesheet"></link>
 
 ## Step3. Assigning a component to the filter block
 
