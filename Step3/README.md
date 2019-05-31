@@ -1,8 +1,4 @@
-setq markdown-xhtml-header-content
-      "<style type='text/css'>
-a { text-decoration: none; }
-a:hover { text-decoration: underline; }
-</style>"
+<link href="style.css" rel="stylesheet"></link>
 
 ## Step3. Assigning a component to the filter block
 
