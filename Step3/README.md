@@ -38,4 +38,4 @@ Next:  [Step4.  Specifying an IIP.](../Step4/Step4.md)
 
 Index: [Go to higher level.](../README.md)
 
-<p id=footer> testing </p>
+<p class="center"> testing </p>
