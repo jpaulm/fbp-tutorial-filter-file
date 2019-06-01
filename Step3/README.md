@@ -37,4 +37,4 @@ Next:  [Step4.  Specifying an IIP.](../Step4/Step4.md)
 
 Index: [Go to higher level.](../README.md)
 
-->Centered text<-
+->THIS TEXT IS IN THE CENTER!<- 
