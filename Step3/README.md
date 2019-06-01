@@ -1,6 +1,6 @@
-<link rel = "stylesheet"
+(link rel = "stylesheet"
    type = "text/css"
-   href = "../style.css" />
+   href = "../style.css" )
 
 ## Step3. Assigning a component to the filter block
 
