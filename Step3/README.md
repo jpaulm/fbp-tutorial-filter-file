@@ -1,3 +1,7 @@
+<link rel = "stylesheet"
+   type = "text/css"
+   href = "myStyle.css" />
+
 ## Step3. Assigning a component to the filter block
 
 For the filter function, we need a component that will match the first character against a character provided as a parameter. As it happens(!), JavaFBP provides a precoded, reusable FBP component called `StartsWith`, which takes a character string as its parameter (specified using an IIP), and whose output port names are ACC and REJ.  **FBP is not designed to be a coding language**.  The ideal is to work with a library of precoded, pretested components.  **You only need to write a component if you can't find an appropriate one - and in that case, you should try to write one that other people will find useful.**
