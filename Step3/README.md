@@ -38,5 +38,5 @@ Next:  [Step4.  Specifying an IIP.](../Step4/Step4.md)
 Index: [Go to higher level.](../README.md)
 
 <p>
-<div style="text-align: center;">Centered text</div>
+<div style="text-align: center;" markdown="1">Centered text</div>
 </p>
