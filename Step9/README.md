@@ -10,6 +10,6 @@ Another "direction" is one I call "centre out": again from my book: " ... the 'c
 
 FBP also lends itself very well to rapid prototyping, and simulation as well - see the discussion about simulation systems in [Chapter I of my book](http://www.jpaulmorrison.com/fbp/intro.shtml) .  You can also start with a *simulation* of your application, and gradually replace the blocks with real application functions. 
 
-Next:  [Step10. Extending the diagram.](../Step10/Step10.md)
+Next:  [Step10. Extending the diagram.](../Step10/README.md)
 
 Index: [Go to higher level.](../README.md)
