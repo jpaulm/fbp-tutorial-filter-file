@@ -1,4 +1,3 @@
-[](../style.css)
 
 ## Step3. Assigning a component to the filter block
 
@@ -38,4 +37,4 @@ Next:  [Step4.  Specifying an IIP.](../Step4/Step4.md)
 
 Index: [Go to higher level.](../README.md)
 
-<div class=middle>text</div>
+
