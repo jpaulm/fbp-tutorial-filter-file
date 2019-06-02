@@ -1,9 +1,9 @@
-<head>
+
 <style>
 h1 {text-align:center;}
 p.center {text-align:center; color:red}
 </style>
-</head>
+
 
 ## Step3. Assigning a component to the filter block
 
