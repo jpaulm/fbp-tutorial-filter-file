@@ -1,3 +1,9 @@
+<head>
+<style>
+h1 {text-align:center;}
+p.center {text-align:center; color:red}
+</style>
+</head>
 
 ## Step3. Assigning a component to the filter block
 
@@ -37,4 +43,4 @@ Next:  [Step4.  Specifying an IIP.](../Step4/Step4.md)
 
 Index: [Go to higher level.](../README.md)
 
-<center>THIS TEXT IS IN THE CENTER! shd be, but isn't</center> 
+<p class=center>THIS TEXT IS IN THE CENTER!</p>
