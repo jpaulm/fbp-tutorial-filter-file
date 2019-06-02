@@ -1,4 +1,3 @@
-<link href="../style.css" rel="stylesheet"></link>
 
 ## Step3. Assigning a component to the filter block
 
@@ -37,3 +36,5 @@ If any port names have been misspelled, you will see a port name `Missing`, and 
 Next:  [Step4.  Specifying an IIP.](../Step4/README.md)
 
 Index: [Go to higher level.](../README.md)
+
+
