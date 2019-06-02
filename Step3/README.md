@@ -1,6 +1,5 @@
 
 <style>
-h1 {text-align:center;}
 p.center {text-align:center; color:red}
 </style>
 
@@ -43,4 +42,4 @@ Next:  [Step4.  Specifying an IIP.](../Step4/Step4.md)
 
 Index: [Go to higher level.](../README.md)
 
-<p class=center>THIS TEXT IS IN THE CENTER!</p>
+<div style=text-align:center>THIS TEXT IS IN THE CENTER!</div>
