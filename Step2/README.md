@@ -8,6 +8,6 @@ The captions `accepted` and `rejected` are generated using a block type in DrawF
 
 When you are ready to add the filter function, you will of course need to delete the existing arrow - right click on the arrow itself, and select Delete.
 
-Next:  [Step3. Assigning a component to the filter block.](../Step3/Step3.md)
+Next:  [Step3. Assigning a component to the filter block.](../Step3/README.md)
 
 Index: [Go to higher level.](../README.md)

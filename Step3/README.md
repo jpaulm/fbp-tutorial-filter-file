@@ -34,6 +34,6 @@ After filling in the `IN`, `ACC` and `REJ` port names, the diagram should now lo
 
 If any port names have been misspelled, you will see a port name `Missing`, and another one unrecognized (`?` under `Connected?`).
 
-Next:  [Step4.  Specifying an IIP.](../Step4/Step4.md)
+Next:  [Step4.  Specifying an IIP.](../Step4/README.md)
 
 Index: [Go to higher level.](../README.md)

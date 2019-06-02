@@ -16,6 +16,6 @@ As you have probably figured out, the counter *creates* a count IP and sends it 
 
 Port `OUT` is marked *optional*.  `Counter` tests if this port is connected - and, if not, it discards IPs that are sent to this port. In what follows, we will drop the `Ignore` block.
 
-Next:  [Step11. Combining the outputs.](../Step11/Step11.md)
+Next:  [Step11. Combining the outputs.](../Step11/README.md)
 
 Index: [Go to higher level.](../README.md)

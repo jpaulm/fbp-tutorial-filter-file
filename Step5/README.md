@@ -12,6 +12,6 @@ Here is the final diagram:
 
 ![Diagram with components and IIPs filled in](Step5.png)
 
-Next:  [Step6. Generating a running program.](../Step6/Step6.md)
+Next:  [Step6. Generating a running program.](../Step6/README.md)
 
 Index: [Go to higher level.](../README.md)
