@@ -1,6 +1,8 @@
-.middle { 
+<style>
+  .middle { 
   text-align: center; 
 } 
+</style>
 
 ## Step3. Assigning a component to the filter block
 
