@@ -1,4 +1,4 @@
-(../style.css)
+[](../style.css)
 
 ## Step3. Assigning a component to the filter block
 
