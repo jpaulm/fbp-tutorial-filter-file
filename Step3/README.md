@@ -42,4 +42,4 @@ Next:  [Step4.  Specifying an IIP.](../Step4/Step4.md)
 
 Index: [Go to higher level.](../README.md)
 
-<div style=text-align:center>THIS TEXT IS IN THE CENTER!</div>
+<div class=center>text</div>
