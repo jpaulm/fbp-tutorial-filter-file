@@ -1,4 +1,4 @@
-<link href="../style.css" rel="stylesheet"></link>
+[](../style.css)
 
 ## Step 9. Design "directions"
 
