@@ -1,4 +1,3 @@
-[](../style.css)
 
 ## Step 9. Design "directions"
 
@@ -16,4 +15,4 @@ Next:  [Step10. Extending the diagram.](../Step10/README.md)
 
 Index: [Go to higher level.](../README.md)
 
-<p class="middle">Centred</p>
+<p>  <a href="../Step8/README.md"> &lt;== Previous</a> <a href="../README.md"> Index</a> <a href="../Step10/README.md"> ==&gt; Next</a>
