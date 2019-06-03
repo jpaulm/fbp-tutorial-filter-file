@@ -1,3 +1,5 @@
+[](..\style.css)
+
 ## Step 9. Design "directions"
 
 As you may have intuited, in FBP we like to go from a high-level design to progressively lower levels, until we are ready to start filling in component names.  High-level components can also be replaced with what are called "subnets": diagrams with "sticky" connections, that can both function as components but can be further broken down.  This keeps the visual mode of FBP without having huge networks with dozens of blocks in a single chart.  In fact DrawFBP has a facility called "Excise" where the designer marks off a section of the diagram and "excises" it, forming a subnet and replacing the excised subnet with a single block that instantiates the subnet.  The sticky ends are called "External Ports" - more about them later.
@@ -14,16 +16,8 @@ Next:  [Step10. Extending the diagram.](../Step10/README.md)
 
 Index: [Go to higher level.](../README.md)
 
-[](
-<style>
-table {
-  border-collapse: collapse;
-  width: 100%;
-}
-</style>
 <table>
 <tr>
   <td> </td> <td>trying to centre </td> <td> </td> 
   </tr>
   </table>
-  )
