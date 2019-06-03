@@ -15,4 +15,4 @@ Next:  [Step10. Extending the diagram.](../Step10/README.md)
 
 Index: [Go to higher level.](../README.md)
 
-<p>  <a href="../Step8/README.md"> &lt;== Previous</a> <a href="../README.md"> Index</a> <a href="../Step10/README.md"> ==&gt; Next</a>
+<p>  <a href="../Step8/README.md"> &lt;== Previous</a> / <a href="../README.md"> Index</a> / <a href="../Step10/README.md"> Next ==&gt; </a>
