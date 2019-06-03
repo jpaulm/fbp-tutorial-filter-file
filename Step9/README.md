@@ -16,8 +16,4 @@ Next:  [Step10. Extending the diagram.](../Step10/README.md)
 
 Index: [Go to higher level.](../README.md)
 
-<table>
-<tr>
-  <td> </td> <td>   trying to centre   </td> <td> </td> 
-  </tr>
-  </table>
+<p class="middle">Centred</p>
