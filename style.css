@@ -2,6 +2,10 @@
 <style>
 .middle { 
   text-align: center; 
-} 
+}
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
 </style>
 </html>
