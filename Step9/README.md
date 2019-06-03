@@ -14,6 +14,12 @@ Next:  [Step10. Extending the diagram.](../Step10/README.md)
 
 Index: [Go to higher level.](../README.md)
 
+<style>
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+</style>
 <table>
 <tr>
   <td> </td> <td>trying to centre </td> <td> </td> 
