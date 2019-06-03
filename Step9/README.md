@@ -18,6 +18,6 @@ Index: [Go to higher level.](../README.md)
 
 <table>
 <tr>
-  <td> </td> <td>trying to centre </td> <td> </td> 
+  <td> </td> <td>                    trying to centre                      </td> <td> </td> 
   </tr>
   </table>
