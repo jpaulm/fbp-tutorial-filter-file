@@ -1,3 +1,4 @@
+<link href="../style.css" rel="stylesheet" type="text/css">
 
 ## Step 9. Design "directions"
 
