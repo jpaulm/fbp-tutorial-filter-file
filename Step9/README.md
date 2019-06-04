@@ -1,8 +1,7 @@
 
-<head>
+
 <link rel="stylesheet" type="text/css" href="../style.css">
-</head>
-<body>
+
 
 ## Step 9. Design "directions"
 
