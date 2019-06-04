@@ -1,3 +1,6 @@
+
+<link href="../style.css" rel="stylesheet" type="text/css">
+
 ## Step5.  Associating components with the other blocks
 
 Pretty straightforward: just click on each block, and select `Choose Component/Subnet Class`.  
@@ -12,6 +15,4 @@ Here is the final diagram:
 
 ![Diagram with components and IIPs filled in](Step5.png)
 
-Next:  [Step6. Generating a running program.](../Step6/README.md)
-
-Index: [Go to higher level.](../README.md)
+<p>  <div class=middle> <a href="../Step4/README.md"> &lt;== Previous</a> / <a href="../README.md"> Index</a> / <a href="../Step6/README.md"> Next ==&gt; </a></div> </p>

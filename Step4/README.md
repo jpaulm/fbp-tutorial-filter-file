@@ -1,3 +1,6 @@
+
+<link href="../style.css" rel="stylesheet" type="text/css">
+
 ## Step4.  Specifying an IIP
 
 Now, as shown in the port list shown above, `TEST` is the port name for the IIP which specifies the test character for matching. As stated above, IIPs are the way FBP reusable components are parameterized.  Usually the parameter is specified in a network definition, so that a network can use the same component in more than one place in the network - with different parameters - but IIPs have the added advantage that the network can easily be changed to present the parameter information as a normal IP, obtained from an upstream process.
@@ -8,6 +11,4 @@ In this case the parameter for `StartsWith` will be provided as an IIP, specifie
 
 Selecting `StartWith` and clicking on `Display Description and Port Info` will verify that all ports are now correctly connected.
 
-Next:  [Step5. Associating components with the other blocks.](../Step5/README.md)
-
-Index: [Go to higher level.](../README.md)
+<p>  <div class=middle> <a href="../Step3/README.md"> &lt;== Previous</a> / <a href="../README.md"> Index</a> / <a href="../Step5/README.md"> Next ==&gt; </a></div> </p>

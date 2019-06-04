@@ -1,4 +1,6 @@
 
+<link href="../style.css" rel="stylesheet" type="text/css">
+
 ## Step3. Assigning a component to the filter block
 
 For the filter function, we need a component that will match the first character against a character provided as a parameter. As it happens(!), JavaFBP provides a precoded, reusable FBP component called `StartsWith`, which takes a character string as its parameter (specified using an IIP), and whose output port names are ACC and REJ.  **FBP is not designed to be a coding language**.  The ideal is to work with a library of precoded, pretested components.  **You only need to write a component if you can't find an appropriate one - and in that case, you should try to write one that other people will find useful.**
@@ -33,8 +35,5 @@ After filling in the `IN`, `ACC` and `REJ` port names, the diagram should now lo
 
 If any port names have been misspelled, you will see a port name `Missing`, and another one unrecognized (`?` under `Connected?`).
 
-Next:  [Step4.  Specifying an IIP.](../Step4/README.md)
-
-Index: [Go to higher level.](../README.md)
-
+<p>  <div class=middle> <a href="../Step2/README.md"> &lt;== Previous</a> / <a href="../README.md"> Index</a> / <a href="../Step4/README.md"> Next ==&gt; </a></div> </p>
 

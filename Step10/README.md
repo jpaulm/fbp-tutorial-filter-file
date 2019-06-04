@@ -1,3 +1,6 @@
+
+<link href="../style.css" rel="stylesheet" type="text/css">
+
 ## Step10. Extending the diagram
 
 For this step we will stay at the diagram level - these changes could of course be made to the *generated code*, but then the code would become progressively more out of step with the diagram, which is perhaps the most important tool of communication between the various groups involved in the development of an application.
@@ -16,6 +19,4 @@ As you have probably figured out, the counter *creates* a count IP and sends it 
 
 Port `OUT` is marked *optional*.  `Counter` tests if this port is connected - and, if not, it discards IPs that are sent to this port. In what follows, we will drop the `Ignore` block.
 
-Next:  [Step11. Combining the outputs.](../Step11/README.md)
-
-Index: [Go to higher level.](../README.md)
+<p>  <div class=middle> <a href="../Step9/README.md"> &lt;== Previous</a> / <a href="../README.md"> Index</a> / <a href="../Step11/README.md"> Next ==&gt; </a></div> </p>

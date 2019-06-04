@@ -1,3 +1,6 @@
+
+<link href="../style.css" rel="stylesheet" type="text/css">
+
 ## Step 1.  Draw high level diagram of app to display contents of file. 
 
 Here is a possible diagram, showing a simple application which displays the contents of a file:
@@ -14,6 +17,4 @@ At this point, you should take a look at the functions provided by DrawFBP.  Dra
 
 Now at this point, you can simply assign real live components to the blocks in the diagrams (plus IIPs and port names), and you will basically have a running program.  However, I am going to assume that you want to add a filter function between the two processes in the design phase (rather than later as the application "evolves"), so that is what we will do in Step2.
 
-Next:  [Step2. Add a filter function.](../Step2/README.md)
-
-Index: [Go to higher level.](../README.md)
+<p>  <div class=middle> <a href="../Step0/README.md"> &lt;== Previous</a> / <a href="../README.md"> Index</a> / <a href="../Step2/README.md"> Next ==&gt; </a></div> </p>

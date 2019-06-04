@@ -1,3 +1,6 @@
+
+<link href="../style.css" rel="stylesheet" type="text/css">
+
 ## Step6.  Generating a running program
 
 Now we have all the necessary information filled in to generate a running program, so click on `Generate Java Network` - Java is the default language, so this function has `Java` filled in in the File menu. This can be changed by clicking on `Select Diagram Language`: currently 4 languages are supported - Java, C#, JSON and FBP.
@@ -13,6 +16,4 @@ DrawFBP's colouring of code is mostly to make character strings and comments sta
 `component` and `connect` are self-explanatory! `initialize` builds an IIP, and connects it to an input port of a component.
 
 
-Next:  [Step7. Running the program.](../Step7/README.md)
-
-Index: [Go to higher level.](../README.md)
+<p>  <div class=middle> <a href="../Step5/README.md"> &lt;== Previous</a> / <a href="../README.md"> Index</a> / <a href="../Step7/README.md"> Next ==&gt; </a></div> </p>
