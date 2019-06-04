@@ -14,27 +14,27 @@ Almost all data in FBP is managed as "chunks" called "Information Packets (IPs)"
 
 ## Tutorial Steps
 
-[Step0. Setup.](Step0/README.md)
+[Step 0. Setup.](Step0/README.md)
 
-[Step1. Draw high level diagram of app to display contents of file.](Step1/README.md)
+[Step 1. Draw high level diagram of app to display contents of file.](Step1/README.md)
 
-[Step2. Add a filter function.](Step2/README.md)
+[Step 2. Add a filter function.](Step2/README.md)
 
-[Step3. Assigning a component to the filter block.](Step3/README.md)
+[Step 3. Assigning a component to the filter block.](Step3/README.md)
 
-[Step4. Specifying an IIP.](Step4/README.md)
+[Step 4. Specifying an IIP.](Step4/README.md)
 
-[Step5. Associating components with the other blocks.](Step5/README.md)
+[Step 5. Associating components with the other blocks.](Step5/README.md)
 
-[Step6. Generating a running program.](Step6/README.md)
+[Step 6. Generating a running program.](Step6/README.md)
 
-[Step7. Running the program.](Step7/README.md)
+[Step 7. Running the program.](Step7/README.md)
 
-[Step8. What does a component look like?](Step8/README.md)
+[Step 8. What does a component look like?](Step8/README.md)
 
-[Step9. Design "directions".](Step9/README.md)
+[Step 9. Design "directions".](Step9/README.md)
 
-[Step10. Extending the diagram.](Step10/README.md)
+[Step 10. Extending the diagram.](Step10/README.md)
 
-[Step11. Combining the outputs.](Step11/README.md)
+[Step 11. Combining the outputs.](Step11/README.md)
 
