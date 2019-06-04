@@ -1,3 +1,4 @@
+<link href="../style.css" rel="stylesheet" type="text/css">
 
 <head>
 <link rel="stylesheet" type="text/css" href="../style.css">
@@ -15,9 +16,5 @@ This style of development is usually called "top-down", but other "directions" h
 Another "direction" is one I call "centre out": again from my book: " ... the 'centre out' development approach – you can get the core logic working first, and then add formatting, input editing, etc., later."
 
 FBP also lends itself very well to rapid prototyping, and simulation as well - see the discussion about simulation systems in [Chapter I of my book](http://www.jpaulmorrison.com/fbp/intro.shtml) .  You can also start with a *simulation* of your application, and gradually replace the blocks with real application functions. 
-
-Next:  [Step10. Extending the diagram.](../Step10/README.md)
-
-Index: [Go to higher level.](../README.md)
 
 <p>  <div class=middle> <a href="../Step8/README.md"> &lt;== Previous</a> / <a href="../README.md"> Index</a> / <a href="../Step10/README.md"> Next ==&gt; </a></div> </p>
