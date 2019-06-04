@@ -35,4 +35,4 @@ At this point, you should locate the JavaFBP jar file (it can be found in `https
 
 The DrawFBP Help facility uses the standard `JavaHelp` facility, which you can download from Maven Central, by doing a search for the artifact called `javahelp` .  After downloading it and saving it, click on the DrawFBP function `File/Locate DrawFBP Help File`.   Once you tell DrawFBP where it is, DrawFBP will remember the location from then on.  
 
-<p>  <div class=middle> none  &lt;== Previous / <a href="../README.md"> Index</a> / <a href="../Step1/README.md"> Next ==&gt; </a></div> </p>
+<p>  <div class=middle> <a href="../README.md"> Index</a> / <a href="../Step1/README.md"> Next ==&gt; </a></div> </p>
