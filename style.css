@@ -1,6 +1,5 @@
 .middle {
   display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 70%;
+  margin: auto;
+  width: 200px;
 }
