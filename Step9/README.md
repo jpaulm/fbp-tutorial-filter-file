@@ -15,4 +15,4 @@ FBP also lends itself very well to rapid prototyping, and simulation as well - s
 
 <!--<div class="middle"> <a href="../Step8/README.md"> &lt;== Previous</a> / <a href="../README.md"> Index</a> / <a href="../Step10/README.md"> Next ==&gt; </a></div> -->
 
-<div class="middle"> <a href="../Step8/README.md"> &lt;== Step8. xxxxxxxxxx</a> / <a href="../README.md"> Index</a> / <a href="../Step10/README.md"> Step10. yyyyyyyyyyyyy ==&gt; </a></div>
+<div class="middle"> <a href="../Step8/README.md"> &lt;== Step8. xxxxxxxxxx &lt;==</a> / <a href="../README.md"> Index</a> / <a href="../Step10/README.md"> ==&gt; Step10. yyyyyyyyyyyyy  </a></div>
