@@ -13,4 +13,6 @@ Another "direction" is one I call "centre out": again from my book: " ... the 'c
 
 FBP also lends itself very well to rapid prototyping, and simulation as well - see the discussion about simulation systems in [Chapter I of my book](http://www.jpaulmorrison.com/fbp/intro.shtml) .  You can also start with a *simulation* of your application, and gradually replace the blocks with real application functions. 
 
-<div class="middle"> <a href="../Step8/README.md"> &lt;== Previous</a> / <a href="../README.md"> Index</a> / <a href="../Step10/README.md"> Next ==&gt; </a></div> 
+<!--<div class="middle"> <a href="../Step8/README.md"> &lt;== Previous</a> / <a href="../README.md"> Index</a> / <a href="../Step10/README.md"> Next ==&gt; </a></div> -->
+
+<div class="middle"> <a href="../Step8/README.md"> &lt;== Step8. xxxxxxxxxx</a> / <a href="../README.md"> Index</a> / <a href="../Step10/README.md"> Step10. yyyyyyyyyyyyy ==&gt; </a></div>
