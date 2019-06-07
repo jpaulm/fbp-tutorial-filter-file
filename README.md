@@ -14,9 +14,9 @@ Almost all data in FBP is managed as "chunks" called "Information Packets (IPs)"
 
 ## Tutorial Steps
 
-[Step 0. Setup.](Step0/README.md)
+[Step 0. Setup.](Step0/)
 
-[Step 1. Draw high level diagram of app to display contents of file.](Step1/README.md)
+[Step 1. Draw high level diagram of app to display contents of file.](Step1/)
 
 [Step 2. Add a filter function.](Step2/README.md)
 
