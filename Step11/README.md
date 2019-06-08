@@ -13,6 +13,6 @@ The count cannot be generated until the inputs have all been read, so the variou
 
 `ConcatStreams` reads and outputs all of its first input, followed by the second input, and so on.  If `ConcatStreams` could only handle, say, two input streams, it might call them `IN1` and `IN2`, but it can handle any number, so it uses something called an "array port", and the individual connection points are labelled using an indexing notation, e.g. `IN[0]`, `IN[1]`, and so on.  
 
-<p>  <div class=middle> <a href="../Step10/README.md"> &lt;== Previous</a> / <a href="../README.md"> Index</a> / Next ==&gt; none</div> </p>
+<span class=middle> &lt;== <a href="../Step10/">  Previous</a> / <a href="../README.md"> Index</a> /  Next ==&gt; (none)</span>
 
 

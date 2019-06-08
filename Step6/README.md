@@ -16,4 +16,4 @@ DrawFBP's colouring of code is mostly to make character strings and comments sta
 `component` and `connect` are self-explanatory! `initialize` builds an IIP, and connects it to an input port of a component.
 
 
-<p>  <div class=middle> <a href="../Step5/README.md"> &lt;== Previous</a> / <a href="../README.md"> Index</a> / <a href="../Step7/README.md"> Next ==&gt; </a></div> </p>
+<span class=middle> &lt;== <a href="../Step5/">  Previous</a> / <a href="../README.md"> Index</a> / <a href="../Step7/"> Next</a> ==&gt;</span>

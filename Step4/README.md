@@ -11,4 +11,4 @@ In this case the parameter for `StartsWith` will be provided as an IIP, specifie
 
 Selecting `StartWith` and clicking on `Display Description and Port Info` will verify that all ports are now correctly connected.
 
-<p>  <div class=middle> <a href="../Step3/README.md"> &lt;== Previous</a> / <a href="../README.md"> Index</a> / <a href="../Step5/README.md"> Next ==&gt; </a></div> </p>
+<span class=middle> &lt;== <a href="../Step3/">  Previous</a> / <a href="../README.md"> Index</a> / <a href="../Step5/"> Next</a> ==&gt;</span>

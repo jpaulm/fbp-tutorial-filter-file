@@ -15,4 +15,4 @@ Here is the final diagram:
 
 ![Diagram with components and IIPs filled in](Step5.png)
 
-<p>  <div class=middle> <a href="../Step4/README.md"> &lt;== Previous</a> / <a href="../README.md"> Index</a> / <a href="../Step6/README.md"> Next ==&gt; </a></div> </p>
+<span class=middle> &lt;== <a href="../Step4/">  Previous</a> / <a href="../README.md"> Index</a> / <a href="../Step6/"> Next</a> ==&gt;</span>

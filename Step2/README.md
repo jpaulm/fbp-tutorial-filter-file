@@ -11,4 +11,4 @@ The captions `accepted` and `rejected` are generated using a block type in DrawF
 
 When you are ready to add the filter function, you will of course need to delete the existing arrow - right click on the arrow itself, and select Delete.
 
-<p>  <div class=middle> <a href="../Step1/README.md"> &lt;== Previous</a> / <a href="../README.md"> Index</a> / <a href="../Step3/README.md"> Next ==&gt; </a></div> </p>
+<span class=middle> &lt;== <a href="../Step1/">  Previous</a> / <a href="../README.md"> Index</a> / <a href="../Step3/"> Next</a> ==&gt;</span>

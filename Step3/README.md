@@ -35,5 +35,5 @@ After filling in the `IN`, `ACC` and `REJ` port names, the diagram should now lo
 
 If any port names have been misspelled, you will see a port name `Missing`, and another one unrecognized (`?` under `Connected?`).
 
-<p>  <div class=middle> <a href="../Step2/README.md"> &lt;== Previous</a> / <a href="../README.md"> Index</a> / <a href="../Step4/README.md"> Next ==&gt; </a></div> </p>
+<span class=middle> &lt;== <a href="../Step2/">  Previous</a> / <a href="../README.md"> Index</a> / <a href="../Step4/"> Next</a> ==&gt;</span>
 

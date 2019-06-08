@@ -31,4 +31,4 @@ Select `Debug` for your project.
 
 Nearly forgot - we need to give it some data: ReadFile handles any sequential file.  In this case the file reader's IIP names at a CSV file (https://en.wikipedia.org/wiki/Comma-separated_values ), and the selected records will appear in a separate window. 
 
-<p>  <div class=middle> <a href="../Step6/README.md"> &lt;== Previous</a> / <a href="../README.md"> Index</a> / <a href="../Step8/README.md"> Next ==&gt; </a></div> </p>
+<span class=middle> &lt;== <a href="../Step6/">  Previous</a> / <a href="../README.md"> Index</a> / <a href="../Step8/"> Next</a> ==&gt;</span>
