@@ -38,7 +38,3 @@ Almost all data in FBP is managed as "chunks" called "Information Packets (IPs)"
 
 [Step 11. Combining the outputs.](Step11/)
 
-
-https://github.com/jpaulm/fbp-tutorial-filter-file/#tutorial-on-flow-based-programming-filter-file-application
-https://github.com/jpaulm/fbp-tutorial-filter-file/#tutorial-steps
-
