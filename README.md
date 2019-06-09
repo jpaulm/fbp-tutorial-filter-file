@@ -10,8 +10,6 @@ If application development is mostly about processing *data*, why not use an app
 
 This tutorial is designed not only to introduce you, the reader, to the *concepts* of Flow-Based Programming (FBP), but  to give you a feeling for what it feels like to actually use the tool which supports these concepts in a number of different ways. FBP is "language-agnostic", but in this case we will using Java, as it is more closely integrated with the tool we will be using - [DrawFBP](https://github.com/jpaulm/drawfbp).  However, we could equally well use any other language which has an FBP implementaion, although it would involve a bit more jumping back and forth between different tools.
 
-FBP uses a "data processing factory" metaphor for designing and building applications. FBP defines applications as networks of "black box" processes, which communicate via data chunks (called Information Packets or IPs) travelling across predefined connections (think "conveyor belts"), where the connections are specified externally to the processes. These black box processes can be reconnected endlessly to form different applications without having to be changed internally. FBP is thus naturally component-oriented.
-
 ## Tutorial Steps
 
 [Step 0. Setup.](Step0/)
