@@ -1,7 +1,7 @@
 
 <link href="../style.css" rel="stylesheet" type="text/css">
 
-## Step5.  Associating components with the other blocks
+## Step05-Choose components and set values for other parts
 
 Pretty straightforward: just click on each block, and select `Choose Component/Subnet Class`.  
 
@@ -13,6 +13,6 @@ That just leaves `display accepted lines`.  In his example, Bob Corrick decided 
 
 Here is the final diagram:
 
-![Diagram with components and IIPs filled in](Step5.png)
+![Diagram with components and IIPs filled in](Step05.png)
 
-<span class=middle> &lt;== <a href="../Step4/">  Previous</a> / <a href="../README.md"> Index</a> / <a href="../Step6/"> Next</a> ==&gt;</span>
+<span class=middle> &lt;== <a href="../Step04/">  Previous</a> / <a href="../README.md"> Index</a> / <a href="../Step06/"> Next</a> ==&gt;</span>

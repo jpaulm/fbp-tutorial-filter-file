@@ -1,7 +1,7 @@
 
 <link href="../style.css" rel="stylesheet" type="text/css">
 
-## Step8.  What does a component look like?
+## Step08-Inside a component
 
 Building a component is relatively simple, but I would like to stress again that you can do a lot of the work involved in building an application without ever doing any coding!  However, if you want to see what a component looks like, I have included the code for `StartsWith.java`:
 
@@ -113,4 +113,4 @@ All JavaFBP components have this structure.
 
 Theoretically you can write components in any language that has an FBP implementation, but you may find yourself having to be creative to get different languages to intercommunicate... especially languages that are implemented by means of a virtual machine.  We will be showing you how to do this later on in the tutorial.
 
-<span class=middle> &lt;== <a href="../Step7/">  Previous</a> / <a href="../README.md"> Index</a> / <a href="../Step9/"> Next</a> ==&gt;</span>
+<span class=middle> &lt;== <a href="../Step07/">  Previous</a> / <a href="../README.md"> Index</a> / <a href="../Step09/"> Next</a> ==&gt;</span>

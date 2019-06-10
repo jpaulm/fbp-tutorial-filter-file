@@ -1,7 +1,7 @@
 
 <link rel="stylesheet" type="text/css" href="../style.css">
 
-## Step 9. Design "directions"
+## Step09-More ideas about design
 
 As you may have intuited, in FBP we like to go from a high-level design to progressively lower levels, until we are ready to start filling in component names.  High-level components can also be replaced with what are called "subnets": diagrams with "sticky" connections, that can both function as components but can be further broken down.  This keeps the visual mode of FBP without having huge networks with dozens of blocks in a single chart.  In fact DrawFBP has a facility called "Excise" where the designer marks off a section of the diagram and "excises" it, forming a subnet and replacing the excised subnet with a single block that instantiates the subnet.  The sticky ends are called "External Ports" - more about them later.
 
@@ -13,4 +13,4 @@ Another "direction" is one I call "centre out": again from my book: " ... the 'c
 
 FBP also lends itself very well to rapid prototyping, and simulation as well - see the discussion about simulation systems in [Chapter I of my book](http://www.jpaulmorrison.com/fbp/intro.shtml) .  You can also start with a *simulation* of your application, and gradually replace the blocks with real application functions. 
 
-<span class=middle> &lt;== <a href="../Step8/">  Previous</a> / <a href="../README.md"> Index</a> / <a href="../Step10/"> Next</a> ==&gt;</span>
+<span class=middle> &lt;== <a href="../Step08/">  Previous</a> / <a href="../README.md"> Index</a> / <a href="../Step10/"> Next</a> ==&gt;</span>

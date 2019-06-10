@@ -1,7 +1,7 @@
 
 <link href="../style.css" rel="stylesheet" type="text/css">
 
-## Step10. Extending the diagram
+## Step10-Extend the diagram
 
 For this step we will stay at the diagram level - these changes could of course be made to the *generated code*, but then the code would become progressively more out of step with the diagram, which is perhaps the most important tool of communication between the various groups involved in the development of an application.
 
@@ -19,4 +19,4 @@ As you have probably figured out, the counter *creates* a count IP and sends it 
 
 Port `OUT` is marked *optional*.  `Counter` tests if this port is connected - and, if not, it discards IPs that are sent to this port. In what follows, we will drop the `Ignore` block.
 
-<span class=middle> &lt;== <a href="../Step9/">  Previous</a> / <a href="../README.md"> Index</a> / <a href="../Step11/"> Next</a> ==&gt;</span>
+<span class=middle> &lt;== <a href="../Step09/">  Previous</a> / <a href="../README.md"> Index</a> / <a href="../Step11/"> Next</a> ==&gt;</span>

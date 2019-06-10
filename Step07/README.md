@@ -1,7 +1,7 @@
 
 <link href="../style.css" rel="stylesheet" type="text/css">
 
-## Step7.  Running the program
+## Step07-Run the program
 
 The generated code shown above is a standard JavaFBP network, and can be executed as described in https://github.com/jpaulm/javafbp/blob/master/README.md .  
 
@@ -31,4 +31,4 @@ Select `Debug` for your project.
 
 Nearly forgot - we need to give it some data: ReadFile handles any sequential file.  In this case the file reader's IIP names at a CSV file (https://en.wikipedia.org/wiki/Comma-separated_values ), and the selected records will appear in a separate window. 
 
-<span class=middle> &lt;== <a href="../Step6/">  Previous</a> / <a href="../README.md"> Index</a> / <a href="../Step8/"> Next</a> ==&gt;</span>
+<span class=middle> &lt;== <a href="../Step06/">  Previous</a> / <a href="../README.md"> Index</a> / <a href="../Step08/"> Next</a> ==&gt;</span>
