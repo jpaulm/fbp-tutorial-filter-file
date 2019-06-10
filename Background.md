@@ -8,4 +8,4 @@ If application development is mostly about processing *data*, why not use an app
 
 This tutorial is designed not only to introduce you, the reader, to the *concepts* of Flow-Based Programming (FBP), but  to give you a feeling for what it feels like to actually use the tool which supports these concepts in a number of different ways. FBP is "language-agnostic", but in this case we will using Java, as it is more closely integrated with the tool we will be using - [DrawFBP](https://github.com/jpaulm/drawfbp).  However, we could equally well use any other language which has an FBP implementation, although it would involve a bit more jumping back and forth between different tools.
 
-![Needs more detail](need_more_detail.jpg "Needs more detail!")
+![Needs more detail](Need_more_detail.jpg "Needs more detail!")
