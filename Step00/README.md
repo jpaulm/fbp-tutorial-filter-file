@@ -27,6 +27,13 @@ When you first fire up DrawFBP, you will see the DrawFBP logo, with 3 connected 
 
 As you develop various functions in DrawFBP, useful information will be stored in `C:Users\<username>\DrawFBPProperties.xml`.
 
+If at some later stage of testing, you want to point at a diagram's `.drw` file and run DrawFBP, go to your DrawFBP local directory, and type 
+
+      drawfbp.bat <diagram file name>
+      
+`drawfbp.bat` references the current DrawFBP jar file, but you can create your own version  if you prefer.
+      
+      
 ### Locating JavaFBP jar file
 
 At this point, you should locate the JavaFBP jar file (it can be found in `https://github.com/jpaulm/javafbp/releases`), download it, and tell DrawFBP where it is, by using the DrawFBP function `File/Locate JavaFBP Jar File`.  Once you tell DrawFBP where it is, DrawFBP will remember the location from then on.  
