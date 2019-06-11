@@ -35,5 +35,5 @@ After filling in the `IN`, `ACC` and `REJ` port names, the diagram should now lo
 
 If any port names have been misspelled, you will see a port name `Missing`, and another one unrecognized (`?` under `Connected?`).
 
-<span class=middle> &lt;== <a href="../Step02/">  Previous</a> / <a href="../README.md"> Index</a> / <a href="../Step04/"> Next</a> ==&gt;</span>
+<span class=middle> &lt;== <a href="../Step02/">  Previous</a> / <a href="https://github.com/jpaulm/fbp-tutorial-filter-file/"> Index</a> / <a href="../Step04/"> Next</a> ==&gt;</span>
 

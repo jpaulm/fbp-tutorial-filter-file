@@ -15,4 +15,4 @@ Here is the final diagram:
 
 ![Diagram with components and IIPs filled in](Step05.png)
 
-<span class=middle> &lt;== <a href="../Step04/">  Previous</a> / <a href="../README.md"> Index</a> / <a href="../Step06/"> Next</a> ==&gt;</span>
+<span class=middle> &lt;== <a href="../Step04/">  Previous</a> / <a href="https://github.com/jpaulm/fbp-tutorial-filter-file/"> Index</a> / <a href="../Step06/"> Next</a> ==&gt;</span>

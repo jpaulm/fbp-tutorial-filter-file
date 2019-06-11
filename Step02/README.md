@@ -11,4 +11,4 @@ The captions `accepted` and `rejected` are generated using a block type in DrawF
 
 When you are ready to add the filter function, you will of course need to delete the existing arrow - right click on the arrow itself, and select Delete.
 
-<span class=middle> &lt;== <a href="../Step01/">  Previous</a> / <a href="../README.md"> Index</a> / <a href="../Step03/"> Next</a> ==&gt;</span>
+<span class=middle> &lt;== <a href="../Step01/">  Previous</a> / <a href="https://github.com/jpaulm/fbp-tutorial-filter-file/"> Index</a> / <a href="../Step03/"> Next</a> ==&gt;</span>

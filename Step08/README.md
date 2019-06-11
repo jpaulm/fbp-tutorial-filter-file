@@ -113,4 +113,4 @@ All JavaFBP components have this structure.
 
 Theoretically you can write components in any language that has an FBP implementation, but you may find yourself having to be creative to get different languages to intercommunicate... especially languages that are implemented by means of a virtual machine.  We will be showing you how to do this later on in the tutorial.
 
-<span class=middle> &lt;== <a href="../Step07/">  Previous</a> / <a href="../README.md"> Index</a> / <a href="../Step09/"> Next</a> ==&gt;</span>
+<span class=middle> &lt;== <a href="../Step07/">  Previous</a> / <a href="https://github.com/jpaulm/fbp-tutorial-filter-file/"> Index</a> / <a href="../Step09/"> Next</a> ==&gt;</span>

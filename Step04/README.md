@@ -11,4 +11,4 @@ In this case the parameter for `StartsWith` will be provided as an IIP, specifie
 
 Selecting `StartWith` and clicking on `Display Description and Port Info` will verify that all ports are now correctly connected.
 
-<span class=middle> &lt;== <a href="../Step03/">  Previous</a> / <a href="../README.md"> Index</a> / <a href="../Step05/"> Next</a> ==&gt;</span>
+<span class=middle> &lt;== <a href="../Step03/">  Previous</a> / <a href="https://github.com/jpaulm/fbp-tutorial-filter-file/"> Index</a> / <a href="../Step05/"> Next</a> ==&gt;</span>

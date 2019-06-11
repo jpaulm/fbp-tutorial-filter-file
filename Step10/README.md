@@ -19,4 +19,4 @@ As you have probably figured out, the counter *creates* a count IP and sends it 
 
 Port `OUT` is marked *optional*.  `Counter` tests if this port is connected - and, if not, it discards IPs that are sent to this port. In what follows, we will drop the `Ignore` block.
 
-<span class=middle> &lt;== <a href="../Step09/">  Previous</a> / <a href="../README.md"> Index</a> / <a href="../Step11/"> Next</a> ==&gt;</span>
+<span class=middle> &lt;== <a href="../Step09/">  Previous</a> / <a href="https://github.com/jpaulm/fbp-tutorial-filter-file/"> Index</a> / <a href="../Step11/"> Next</a> ==&gt;</span>

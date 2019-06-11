@@ -31,4 +31,4 @@ Select `Debug` for your project.
 
 Nearly forgot - we need to give it some data: ReadFile handles any sequential file.  In this case the file reader's IIP names at a CSV file (https://en.wikipedia.org/wiki/Comma-separated_values ), and the selected records will appear in a separate window. 
 
-<span class=middle> &lt;== <a href="../Step06/">  Previous</a> / <a href="../README.md"> Index</a> / <a href="../Step08/"> Next</a> ==&gt;</span>
+<span class=middle> &lt;== <a href="../Step06/">  Previous</a> / <a href="https://github.com/jpaulm/fbp-tutorial-filter-file/"> Index</a> / <a href="../Step08/"> Next</a> ==&gt;</span>
