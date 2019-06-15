@@ -5,6 +5,8 @@
 
 Pretty straightforward: just click on each block, and select `Choose Component/Subnet Class`.  
 
+This will present the "File Chooser" dialog.  Assuming you have (successfully) used the `Locate JavaFBP Jar File` function, the first line will be the root of that jar file.  Other entries will be from your working component directory.
+
 The first block (`read sample file`) would most probably use the `ReadFile` component in the `core/components/io` package in the JavaFBP jar file.  This requires an IIP containing the file name - port name `SOURCE`.
 
 The `ignore` block would most likely use the `Discard` component in the `core/components/routing` package, although of course you could use any component here, or even route the "ignored" IPs to other parts of the diagram.
