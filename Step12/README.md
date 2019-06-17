@@ -17,7 +17,9 @@ The way we do this is to create an instance of the "Enclosure" block type, and *
 
 ![Diagram with "stretched" Enclosure](Step12.png)
 
-Now the only part of the Enclosure which you can click on to get the action list is the coloured section at the top.
+You will see that three of the arrows in this diagram are crossed by stretched boundaries of the Enclosure (the dotted lines):  these are the connections which would be cut if we tried to cut out the centre blocks, so these arrows will be hooked up to External ports, which will handle communication between the inside and outside of the subnet.
+
+Now the only part of the Enclosure which you can click on to get the action list is the coloured section at the top.  So click on this, and select the `Excise Subnet` function.
 
 
 
