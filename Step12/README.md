@@ -7,7 +7,7 @@ As we stated above, FBP has a concept called "subnets", which may be thought of 
 
 DrawFBP has a facility called "Excise" where the designer marks off a section of the diagram and "excises" it, forming a subnet and replacing the excised subnet with a single block that instantiates the subnet. The sticky ends are called "External Ports", and form the "bridge" between the indide and the outside of a subnet.
 
-Let us go back to the diagram we show in <a href="">Step05-Choose components and set values for other parts</a>:
+Let us go back to the diagram we show in <a href="../Step05/">Step05-Choose components and set values for other parts</a>:
 
 ![Diagram with components and IIPs filled in](../Step05/Step05.png)
 
