@@ -3,7 +3,7 @@
 
 ## Step09-More ideas about design
 
-As you may have intuited, in FBP we like to go from a high-level design to progressively lower level networks, until we are ready to start filling in component names.  These lower-level are called "subnets": they may be thought of as diagrams with "sticky" connections, that can both function as components but themselves comprise components - or in fact still lower-level subnets.  This keeps the visual mode of FBP without having huge networks with dozens of blocks in a single chart, so a complex application may be structured as a "tree" of subnets, where the root is a high-level network with all or most of the nodes being subnets.
+As you may have intuited, in FBP we like to go from a high-level design to progressively lower level networks, until we are ready to start filling in component names.  These lower-level networks are called "subnets" - basically diagrams with "sticky" connections, that can both function as components but themselves comprise components - or still lower-level subnets.  This keeps the visual mode of FBP without having huge networks with dozens of blocks in a single chart, so a complex application may be structured as a "tree" of subnets, where the root is a high-level network with all or most of the nodes being subnets.
 
 In fact DrawFBP has a facility called "Excise" where the designer marks off a section of the diagram and "excises" it, forming a subnet and replacing the excised subnet with a single block that instantiates the subnet.  The sticky ends are called "External Ports" - more about subnets and external ports in  <a href="../Step12/"> Step12-Subnets</a>.
 
