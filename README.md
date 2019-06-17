@@ -35,7 +35,9 @@ Using DrawFBP, we design and build a network of components from the JavaFBP libr
 
 [Step10-Extend the diagram.](Step10/)
 
-[Step11- Combine data flows.](Step11/)
+[Step11-Combine data flows.](Step11/)
+
+[Step12-Subnets.](Step12/)
 
 
 **Repeat, with or without an audience!** 
