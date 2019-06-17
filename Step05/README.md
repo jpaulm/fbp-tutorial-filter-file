@@ -1,7 +1,7 @@
 
 <link href="../style.css" rel="stylesheet" type="text/css">
 
-## Step05 - Choose components and set values for other parts
+## Step05-Choose components and set values for other parts
 
 Pretty straightforward: just click on each block, and select `Choose Component/Subnet Class`.  
 
