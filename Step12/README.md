@@ -27,10 +27,10 @@ The first thing that happens is that Excise will prompt you to provide a subnet 
 
 Next you will be prompted to enter External Port names. These are the port names that connections with *outside* process connections will use. Since the external port name is a *parameter* to the External Port process it is encoded in an IIP.  This may be a bit confusing at first!  Thus the External Port labelled `IN` in subnet "Filter" actually has two ports of its own: `NAME`, connected with the IIP holding the string `PARM`; and `OUT`, which sends data IPs arriving from outside the subnet to the insides of the subnet!  Note that the External Port you are being prompted about is shown in yellow; the remaining External Ports are not shown yet!
 
-Here is the first External Port with its assigned name (the order in which you are prompted for External Port names is random!):
+Here is the last External Port with its assigned name (the order in which you are prompted for External Port names is random!):
 
-![Entering External Port names](Step12-1.png)
-
+<!--![Entering External Port names](Step12-1.png)
+-->
 
 
 <span class=middle> &lt;== <a href="../Step11/">  Previous</a> / <a href="https://github.com/jpaulm/fbp-tutorial-filter-file/"> Index</a> /  Next ==&gt; (none)</span>
