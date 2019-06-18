@@ -5,21 +5,31 @@
 
 As we stated above, FBP has a concept called "subnets", which may be thought of as ordinary FBP networks, with "sticky" connections.  In FBP our usual approach is to go from a high-level design to progressively lower levels, until we are ready to start filling in component names. These lower-level networks are called "subnets" - basically diagrams with "sticky" connections, that can both function as components but themselves comprise components - or still lower-level subnets - so a complex application may be structured as a "tree" of subnets, where the root is a high-level network with all or most of the nodes being subnets.
 
-DrawFBP has a facility called "Excise" where the designer marks off a section of the diagram and "excises" it, forming a subnet and replacing the excised subnet with a single block that instantiates the subnet. The sticky ends are called "External Ports", and form the "bridge" between the indide and the outside of a subnet.
+DrawFBP has a facility called "Excise" where the designer marks off a section of the diagram and "excises" it, forming a subnet and replacing the excised subnet with a single block that instantiates the subnet. The sticky ends are called "External Ports", and form a bridge between the inside and the outside of a subnet.
 
 Let us go back to the diagram we show in <a href="../Step05/">Step05-Choose components and set values for other parts</a>:
 
 ![Diagram with components and IIPs filled in](../Step05/Step05.png)
 
-Now let us suppose we want to hid the "Ignore" node - we can "excise" the middle two components and put them in a separate subnet called, say, "Filter".  
+Now let us suppose we want to turn the two centre processes into a subnet - this will also have the benefit of hiding the "Ignore" node - we will call the subnet called "Filter".  
 
-The way we do this is to create an instance of the "Enclosure" block type, and *stretch* it to surround the blocks we want to excise - mouse over the corners, and drag them to where you want them to be.  Here is the diagram with the Enclsure added.
+The way we do this is to create an instance of the "Enclosure" block type, and *stretch* it to surround the blocks we want to excise - mouse over the corners, and drag them to where you want them to be.  Here is the diagram with the Enclosure added.
 
 ![Diagram with "stretched" Enclosure](Step12.png)
 
-You will see that three of the arrows in this diagram are crossed by stretched boundaries of the Enclosure (the dotted lines):  these are the connections which would be cut if we tried to cut out the centre blocks, so these arrows will be hooked up to External ports, which will handle communication between the inside and outside of the subnet.
+You will see that three of the arrows in this diagram are crossed by the dotted lines:  these are the connections which connect the inside and the outside of the Enclosure, so the Excise function will add "External Ports", and hook up these arrows to them.  External ports are actually processes in their own right, and have a different symbol on the diagram.  The single block that will replace the old subnet in the original diagram is shown with double line boundaries.  
 
-Now the only part of the Enclosure which you can click on to get the action list is the coloured section at the top.  So click on this, and select the `Excise Subnet` function.
+Now the only part of the Enclosure which you can click on to get the action list is the coloured section at the top.  So the best way to grasp this logic is to start by clicking on this, and then select the `Excise Subnet` function.   Let's do it!
+
+### Enter subnet name
+
+The first thing that happens is that Excise will prompt you to provide a subnet name.  It does not need an extension, so "Filter" will do.
+
+Next you will be prompted to enter External Port names. These are the port names that connections with *outside* process connections will use. Since the external port name is a *parameter* to the External Port process it is encoded in an IIP.  This may be a bit confusing at first!  Thus the External Port labelled `IN` in subnet "Filter" actually has two ports of its own: `NAME`, connected with the IIP holding the string `PARM`; and `OUT`, which sends data IPs arriving from outside the subnet to the insides of the subnet!  Note that the External Port you are being prompted about is shown in yellow; the remaining External Ports are not shown yet!
+
+Here is the first External Port with its assigned name (the order in which you are prompted for External Port names is random!):
+
+![Entering External Port names](Step12-1.png)
 
 
 
