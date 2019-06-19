@@ -29,7 +29,7 @@ Here is the last External Port with its assigned name (the order in which you ar
 
 ![Entering External Port names](Step12-1.png)
 
-The actual code for `Filter.java` can be seen at [Code for "Filter"](code/Filter.java)
+The actual code for `Filter.java` can be seen at [Code for "Filter"](code/Filter.java).  Note that the input External Ports both use a standard component `SubIn`, while the output External Port uses component `SubOut`.  The External Port name is passed to the process via an IIP.
 
 Here is the original diagram with the subnet replaced by a single (subnet) block:
 
