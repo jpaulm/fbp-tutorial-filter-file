@@ -29,8 +29,8 @@ Next you will be prompted to enter External Port names. These are the port names
 
 Here is the last External Port with its assigned name (the order in which you are prompted for External Port names is random!):
 
-<!--![Entering External Port names](Step12-1.png)
--->
+![Entering External Port names](Step12-1.png)
+
 
 
 <span class=middle> &lt;== <a href="../Step11/">  Previous</a> / <a href="https://github.com/jpaulm/fbp-tutorial-filter-file/"> Index</a> /  Next ==&gt; (none)</span>
