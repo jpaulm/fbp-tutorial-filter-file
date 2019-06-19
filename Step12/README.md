@@ -29,7 +29,7 @@ Here is the last External Port with its assigned name (the order in which you ar
 
 ![Entering External Port names](Step12-1.png)
 
-The actual code for `Filter.java` can be seen at [Code for "Filter"](../code/Filter.java)
+The actual code for `Filter.java` can be seen at [Code for "Filter"](code/Filter.java)
 
 Here is the original diagram with the subnet replaced by a single (subnet) block:
 
