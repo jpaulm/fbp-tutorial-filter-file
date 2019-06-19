@@ -3,9 +3,9 @@
 
 ## Step12-Subnets
 
-As we stated above, FBP has a concept called "subnets", which may be thought of as ordinary FBP networks, with "sticky" connections.  In FBP our usual approach is to go from a high-level design to progressively lower levels, until we are ready to start filling in component names. These lower-level networks are called "subnets" - basically diagrams with "sticky" connections, that can both function as components but themselves comprise components - or still lower-level subnets - so a complex application may be structured as a "tree" of subnets, where the root is a high-level network with all or most of the nodes being subnets.
+As we stated above, FBP has a concept called "subnets", which may be thought of as ordinary FBP networks, with "sticky" connections.  In FBP our usual approach is to go from a high-level design to progressively lower levels, until we are ready to start filling in component names. These lower-level networks are called "subnets" - basically diagrams that can both function as components but themselves will comprise components - or still lower-level subnets - so a complex application may be structured as a "tree" of subnets, where the root is a high-level network with all or most of the nodes being subnets.
 
-DrawFBP has a facility called "Excise" where the designer marks off a section of the diagram and "excises" it, forming a subnet and replacing the excised subnet with a single block that instantiates the subnet. The sticky ends are called "External Ports", and form a bridge between the inside and the outside of a subnet.
+Now a designer can build a subnet by hand, but it could be tricky to get it right, so DrawFBP has a facility called "Excise" where the designer marks off a section of the diagram and "excises" it, forming a subnet and replacing the excised subnet with a single block that instantiates the subnet. The sticky ends are called "External Ports", and form a bridge between the inside and the outside of a subnet. The resulting diagram may not be beautiful, but the designer can fix it up afterwards!
 
 Let us go back to the diagram we show in <a href="../Step05/">Step05-Choose components and set values for other parts</a>:
 
@@ -21,16 +21,16 @@ You will see that three of the arrows in this diagram are crossed by the dotted 
 
 Now the only part of the Enclosure which you can click on to get the action list is the coloured section at the top.  So the best way to grasp this logic is to start by clicking on this, and then select the `Excise Subnet` function.   Let's do it!
 
-### Enter subnet name
-
 The first thing that happens is that Excise will prompt you to provide a subnet name.  It does not need an extension, so "Filter" will do.
 
-Next you will be prompted to enter External Port names. These are the port names that connections with *outside* processes will use. Since the external port name is a *parameter* to the External Port process it is encoded in an IIP.  This may be a bit confusing at first!  The External Port labelled `IN` in subnet "Filter" actually has two ports of its own: `NAME`, connected with the IIP holding the string `PARM` (this is not shown in the diagram, as the `NAME` parameter is just shown in red;  and `OUT`, which sends data IPs arriving from outside the subnet to inside the subnet!  Note that the External Port you are being prompted about is shown in yellow.
+Next you will be prompted to enter External Port names. These are the port names that the connections with *outside* processes will use. These external ports are show with a particular symbol, and their *external* names are shown in red.  During this process, the External Port you are being prompted about is shown in yellow.
 
 Here is the last External Port with its assigned name (the order in which you are prompted for External Port names is random!):
 
 ![Entering External Port names](Step12-1.png)
 
+Here is the original diagram with the subnet replaced by a single (subnet) block:
 
+![Diagram after refactoring](Step12-2.png)
 
 <span class=middle> &lt;== <a href="../Step11/">  Previous</a> / <a href="https://github.com/jpaulm/fbp-tutorial-filter-file/"> Index</a> /  Next ==&gt; (none)</span>
