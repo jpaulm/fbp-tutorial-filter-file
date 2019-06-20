@@ -29,7 +29,9 @@ Here is the last External Port with its assigned name (the order in which you ar
 
 ![Entering External Port names](Step12-1.png)
 
-The actual code for `Filter.java` can be seen at [Code for "Filter"](code/Filter.java).  Note that the input External Ports both use a standard component `SubIn`, while the output External Port uses component `SubOut`.  The External Port name is passed to the process via an IIP. The Extenal Port symbol may be thought of as a visual shorthand.  Here is a diagram with an External Port "blown up" - it also shows the port information:
+The actual code for `Filter.java` can be seen at [Code for "Filter"](code/Filter.java).  Note that the input External Ports both use a standard component `SubIn`, while the output External Port uses component `SubOut`.  The External Port name is passed to the process via an IIP. 
+
+The External Port symbol may be thought of as a kind of visual shorthand, as all the parts are determined except for the *external* names.  Here is a diagram with an External Port "blown up" - it also shows the port information:
 
 !["Blown up" External Port](Step12-3.png)
 
