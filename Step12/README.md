@@ -35,4 +35,6 @@ Here is the original diagram with the subnet replaced by a single (subnet) block
 
 ![Diagram after refactoring](Step12-2.png)
 
+You will notice that the legend "rejected" got caught outside the subnet!
+
 <span class=middle> &lt;== <a href="../Step11/">  Previous</a> / <a href="https://github.com/jpaulm/fbp-tutorial-filter-file/"> Index</a> /  Next ==&gt; (none)</span>
