@@ -29,8 +29,12 @@ Here is the last External Port with its assigned name (the order in which you ar
 
 ![Entering External Port names](Step12-1.png)
 
+The actual code for `Filter.java` can be seen at [Code for "Filter"](code/Filter.java).  Note that the input External Ports both use a standard component `SubIn`, while the output External Port uses component `SubOut`.  The External Port name is passed to the process via an IIP.
+
 Here is the original diagram with the subnet replaced by a single (subnet) block:
 
 ![Diagram after refactoring](Step12-2.png)
+
+You will notice that the legend "rejected" got caught outside the subnet!
 
 <span class=middle> &lt;== <a href="../Step11/">  Previous</a> / <a href="https://github.com/jpaulm/fbp-tutorial-filter-file/"> Index</a> /  Next ==&gt; (none)</span>
