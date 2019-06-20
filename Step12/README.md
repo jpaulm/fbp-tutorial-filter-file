@@ -29,11 +29,15 @@ Here is the last External Port with its assigned name (the order in which you ar
 
 ![Entering External Port names](Step12-1.png)
 
-The actual code for `Filter.java` can be seen at [Code for "Filter"](code/Filter.java).  Note that the input External Ports both use a standard component `SubIn`, while the output External Port uses component `SubOut`.  The External Port name is passed to the process via an IIP.
+The actual code for `Filter.java` can be seen at [Code for "Filter"](code/Filter.java).  Note that the input External Ports both use a standard component `SubIn`, while the output External Port uses component `SubOut`.  The External Port name is passed to the process via an IIP. The Extenal Port symbol may be thought of as a visual shorthand.  Here is a diagram with an External Port "blown up" - it also shows the port information:
 
-Here is the original diagram with the subnet replaced by a single (subnet) block:
+!["Blown up" External Port](Step12-3.png)
+
+And here is the original diagram with the subnet replaced by a single (subnet) block:
 
 ![Diagram after refactoring](Step12-2.png)
+
+DrawFBP will now let you modify both the subnet and the "supranet" - you can double click on the subnet block to switch to the subnet itself.
 
 You will notice that the legend "rejected" got caught outside the subnet!
 
