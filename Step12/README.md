@@ -3,9 +3,11 @@
 
 ## Step12-Subnets
 
-As we stated above, FBP has a concept called "subnets", which may be thought of as ordinary FBP networks, with "sticky" connections.  In FBP our usual approach is to go from a high-level design to progressively lower levels, until we are ready to start filling in component names. These lower-level networks are called "subnets" - basically diagrams that can both function as components but themselves will comprise components - or still lower-level subnets - so a complex application may be structured as a "tree" of subnets, where the root is a high-level network with all or most of the nodes being subnets.
+As we stated above, FBP has a concept called "subnets", which may be thought of as ordinary FBP networks, but with "sticky" connections.  In FBP our usual approach is to go from a high-level design to progressively lower levels, until we are ready to start filling in component names. These lower-level networks are called "subnets" - basically diagrams that can both function as components but themselves will comprise components - or still lower-level subnets - so a complex application may be structured as a "tree" of subnets, where the root is a high-level network with all or most of the nodes being subnets.
 
-Now a designer can build a subnet by hand, but it could be tricky to get it right, so DrawFBP has a facility called "Excise" where the designer marks off a section of the diagram and "excises" it, forming a subnet and replacing the excised subnet with a single block that instantiates the subnet. The sticky ends are called "External Ports", and form a bridge between the inside and the outside of a subnet. The resulting diagram may not be beautiful, but the designer can fix it up afterwards!
+Of course, to some extent, you can work upwards from the component level.  Imagine designing a house; working down from the highest level, you do not suddenly find drywall emerging from the design: at some point, you realize that drywall will be useful, and you start working towards that.
+
+Now, a designer can certainly build a subnet by hand, but it could be tricky to get it right, so DrawFBP has a facility called "Excise" where the designer marks off a section of the diagram and "excises" it, forming a subnet and replacing the excised subnet with a single block that represents the whole subnet. The sticky ends are called "External Ports", and form a bridge between the inside and the outside of a subnet. The diagram resulting from using "excise" may not be beautiful, but the designer can fix it up afterwards!
 
 Let us go back to the diagram we show in <a href="../Step05/">Step05-Choose components and set values for other parts</a>:
 
