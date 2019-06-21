@@ -1,7 +1,7 @@
 
 <link href="../style.css" rel="stylesheet" type="text/css">
 
-## Step08-Inside a component
+## Step08 - Inside a component
 
 Building a component is relatively simple, but I would like to stress again that you can do a lot of the work involved in building an application without ever doing any coding!  However, if you want to see what a component looks like, I have included the code for `StartsWith.java`:
 

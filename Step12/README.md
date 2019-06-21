@@ -1,7 +1,7 @@
 
 <link rel="stylesheet" type="text/css" href="../style.css">
 
-## Step12-Subnets
+## Step12 - Subnets
 
 As we stated above, FBP has a concept called "subnets", which may be thought of as ordinary FBP networks, with "sticky" connections.  In FBP our usual approach is to go from a high-level design to progressively lower levels, until we are ready to start filling in component names. These lower-level networks are called "subnets" - basically diagrams that can both function as components but themselves will comprise components - or still lower-level subnets - so a complex application may be structured as a "tree" of subnets, where the root is a high-level network with all or most of the nodes being subnets.
 
@@ -42,4 +42,4 @@ You will notice that the legend "rejected" got caught outside the subnet - easy 
 DrawFBP will now let you modify both the subnet and the "supranet" - you can double click on the subnet block to switch to the subnet itself.
 
 
-<span class=middle> &lt;== <a href="../Step11/">  Previous</a> / <a href="https://github.com/jpaulm/fbp-tutorial-filter-file/"> Index</a> /  Next ==&gt; (none)</span>
+<span class=middle> &lt;== <a href="../Step11/">  Previous</a> / <a href="https://github.com/jpaulm/fbp-tutorial-filter-file/"> Index</a> /  <a href="../Step13/"> Next</a> ==&gt;</span>

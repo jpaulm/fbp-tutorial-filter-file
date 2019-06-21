@@ -13,31 +13,33 @@ Using DrawFBP, we design and build a network of components from the JavaFBP libr
 
 ## Tutorial Steps
 
-[Step00-Setup DrawFBP](Step00/)
+[Step00 - Setup DrawFBP](Step00/)
 
-[Step01-Draw an end-to-end diagram.](Step01/)
+[Step01 - Draw an end-to-end diagram.](Step01/)
 
-[Step02-Add other parts to the diagram.](Step02/)
+[Step02 - Add other parts to the diagram.](Step02/)
 
-[Step03-Choose a component for a part.](Step03/)
+[Step03 - Choose a component for a part.](Step03/)
 
-[Step04-Set a value for a part.](Step04/)
+[Step04 - Set a value for a part.](Step04/)
 
-[Step05-Choose components and set values for other parts.](Step05/)
+[Step05 - Choose components and set values for other parts.](Step05/)
 
-[Step06-Generate a Java program.](Step06/)
+[Step06 - Generate a Java program.](Step06/)
 
-[Step07-Run the program.](Step07/)
+[Step07 - Run the program.](Step07/)
 
-[Step08-Inside a component.](Step08/)
+[Step08 - Inside a component.](Step08/)
 
-[Step09-More ideas about design.](Step09/)
+[Step09 - More ideas about design.](Step09/)
 
-[Step10-Extend the diagram.](Step10/)
+[Step10 - Extend the diagram.](Step10/)
 
-[Step11-Combine data flows.](Step11/)
+[Step11 - Combine data flows.](Step11/)
 
-[Step12-Subnets.](Step12/)
+[Step12 - Subnets.](Step12/)
+
+[Step13 - "Brackets" and "substreams".](Step12/)
 
 
 **Repeat, with or without an audience!** 

@@ -1,8 +1,8 @@
 
 <link href="../style.css" rel="stylesheet" type="text/css">
 
-## Step06-Generate a Java program
-
+## Step06 - Generate a Java program
+ 
 Now we have all the necessary information filled in to generate a running program, so click on `Generate Java Network` - Java is the default language, so this function has `Java` filled in in the File menu. This can be changed by clicking on `Select Diagram Language`: currently 4 languages are supported - Java, C#, JSON and FBP.
 
 Here is the result:

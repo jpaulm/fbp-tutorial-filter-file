@@ -1,7 +1,7 @@
 
 <link href="../style.css" rel="stylesheet" type="text/css">
 
-## Step01-Draw an end-to-end diagram. 
+## Step01 - Draw an end-to-end diagram. 
 
 Here is a possible diagram, showing a simple application which displays the contents of a file:
 
