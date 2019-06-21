@@ -41,9 +41,13 @@ And here is the original diagram with the subnet replaced by a single (subnet) b
 
 ![Diagram after refactoring](Step12-2.png)
 
-You will notice that the legend "rejected" got caught outside the subnet - easy to fix!
-
 DrawFBP will now let you modify both the subnet and the "supranet" - you can double click on the subnet block to switch to the subnet itself.
+
+In the "supranet" there is now a reference to a subnet, which is a `.drw` file.  To generate Java code *all* the nodes must have a Java `.class` file associated with them as well, so for the new subnet, do a File/Generate Java/Network, followed by a File/Compile.  Here is the display showing the `.class` file associaition as well.
+
+![Entering External Port names](Step12-4.png)
+
+
 
 
 <span class=middle> &lt;== <a href="../Step11/">  Previous</a> / <a href="https://github.com/jpaulm/fbp-tutorial-filter-file/"> Index</a> /  <a href="../Step13/"> Next</a> ==&gt;</span>
