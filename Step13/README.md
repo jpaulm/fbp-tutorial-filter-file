@@ -41,7 +41,7 @@ In conventional programming a lot of the processing takes place when a control f
 
 FBP has a standard component to insert the brackets at the right places ["Collate"](https://github.com/jpaulm/javafbp/blob/master/src/main/java/com/jpaulmorrison/fbp/core/components/misc/Collate.java).
 
-Schematically we can show the output as follows, using angle brackets for the "bracket" IPs (you can generate your brackets with tags describing what kind of group they designate): 
+Schematically we can show the output as follows, using angle brackets for the "bracket" IPs (you can generate your brackets with tags describing what kind of group they designate, even though this is not strictly necessary): 
 
 ```
 < (branch)
