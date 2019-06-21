@@ -35,7 +35,7 @@ Here is an example from the book "Flow-Based Programming" (Fig. 9.1):
    .
 ```
 
-The "IP type" is the class of each IP contents.  In this case, for downstream processing you would arrange to have an "open bracket" IP at the start of every "branch" and also every "account", and a "close bracket" at the end of every "account" and also every "branch".  
+The "IP type" is the class of each IP contents.  In this case, for downstream processing you could arrange to have an "open bracket" IP at the start of every "branch" and also every "account", and a "close bracket" at the end of every "account" and also every "branch".  
 
 In conventional programming a lot of the processing takes place when a control field *changes*, so it is actually very helpful to have an explicit data item (an IP) signalling the point where such a change occurs!
 
