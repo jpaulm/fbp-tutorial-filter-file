@@ -5,7 +5,7 @@
 
 ### DrawFBP
 
-We will start by installing DrawFBP, the FBP diagramming tool.  Go to https://github.com/jpaulm/drawfbp , and obtain the DrawFBP jar file from the latest release in DrawFBP/Releases, and store the jar file on your desktop.  
+We will start by installing DrawFBP, the FBP diagramming tool.  Go to https://github.com/jpaulm/drawfbp/releases/tag/v2.16.15 (8,597,247 bytes), and download the DrawFBP jar file, and store it on your desktop.  
 
 Alternatively, you can do a search for `DrawFBP` on Maven.  
 
