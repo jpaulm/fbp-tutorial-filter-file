@@ -7,6 +7,7 @@ Up to now we have been dealing with "streams" of data chunks called "Information
 
 Here is an example from the book "Flow-Based Programming" (Fig. 9.1): 
 
+```
  IP type     branch   acct #      date       amount   DEP/WD
 
  account        1        1
@@ -32,5 +33,5 @@ Here is an example from the book "Flow-Based Programming" (Fig. 9.1):
  trans          2        3      1992/3/17     88.22     DEP
    .
    .
-
+```
 <span class=middle> &lt;== <a href="../Step12/">  Previous</a> / <a href="https://github.com/jpaulm/fbp-tutorial-filter-file/"> Index</a> /  Next ==&gt; (none)</span>
