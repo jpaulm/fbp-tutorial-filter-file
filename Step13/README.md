@@ -1,7 +1,7 @@
 
 <link rel="stylesheet" type="text/css" href="../style.css">
 
-## Step13-"Brackets" and "substreams"
+## Step13 - "Brackets" and "substreams"
 
 Up to now we have been dealing with "streams" of data chunks called "Information Packets" (IPs), but very often we want to subdivide the IP stream into smaller (often nested) groupings.  We call them "substreams", and they are delimited by special non-data IPs called "open bracket" and "close bracket".
 
