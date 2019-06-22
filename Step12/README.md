@@ -43,7 +43,7 @@ And here is the original diagram with the subnet replaced by a single (subnet) b
 
 DrawFBP will now let you modify both the subnet and the "supranet" - you can double click on the subnet block to switch to the subnet itself.
 
-In the "supranet" there is now a reference to a subnet, which is a `.drw` file.  To generate Java code, *all* the nodes must have a Java `.class` file associated with them as well, so for the new subnet, do a `File/Generate Java/Network`, followed by a `File/Compile`.  Here is the display showing the `.class` file association as well as the subnet `.drw` file.
+In the "supranet" there is now a reference to a subnet, which is a `.drw` file.  To generate Java code, *all* the nodes in a diagram must have a Java `.class` file associated with them as well.  So *for the new subnet*, do a `File/Generate Java Network`, followed by a `File/Compile`.  Now associate the `.class` file with the subnet block, using the `Block/Choose Component or Subnet Class` - this will result in the display shown below.  You can now generate the Java code for the "supranet".  Here is the display showing both the `.class` file and the subnet `.drw` file for the subnet block.
 
 ![Showing subnet class name](Step12-4.png)
 
