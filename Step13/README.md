@@ -87,6 +87,10 @@ Another interesting application of bracket IPs is in interactive applications.  
 
 ![High-level Interactive Application](../Step13/Step13-1.png)
 
+Now clearly you can't tie up the whole machine for one user, so you will have substreams for different users chasing each other round the network. The rest of the application just has to make sure that the substream travels around as a unit! If you the designer get desperate you can convert the substream into an IP "tree", and then back again - see [Chap. XII - Tree Structures](http://www.jpaulmorrison.com/fbp/tree.shtml) in "Flow-Based Programming", 1st ed. 
+
+Interestingly, Facebook announced a few years ago - [Flux: An Application Architecture for React](https://reactjs.org/blog/2014/05/06/flux.html) - that they had shifted to this design approach, which they call "Flux".
+
 Now, rather than having one big object travelling around the network, it is useful to use a substream, where the first IP after the bracket IP represents the "state" of the screen, plus user info, followed by 0 or more IPs containing relevant data.  The substream may even be a list, for example when you want to display all the courses someone has taken...
 
 <span class=middle> &lt;== <a href="../Step12/">  Previous</a> / <a href="https://github.com/jpaulm/fbp-tutorial-filter-file/"> Index</a> /  Next ==&gt; (none)</span>
