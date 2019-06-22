@@ -85,6 +85,6 @@ The IPs between an "open bracket" and a "close bracket" comprise a "substream", 
 
 Another interesting application of bracket IPs is in interactive applications.  In this case, typically the application end user sends something to the system, and then waits for a result.  We thus have a very high level that looks like this:
 
-[High-level Interactive Application](../Step13/Step13-1.png)
+![High-level Interactive Application](../Step13/Step13-1.png)
 
 <span class=middle> &lt;== <a href="../Step12/">  Previous</a> / <a href="https://github.com/jpaulm/fbp-tutorial-filter-file/"> Index</a> /  Next ==&gt; (none)</span>
