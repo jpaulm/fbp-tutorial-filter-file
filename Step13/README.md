@@ -3,9 +3,11 @@
 
 ## Step13 - "Brackets" and "substreams"
 
+### Grouping records
+
 Up to now we have been dealing with "streams" of data chunks called "Information Packets" (IPs), but very often we want to subdivide the IP stream into smaller (often nested) groupings.  We call them "substreams", and they are delimited by special non-data IPs called "open bracket" and "close bracket".
 
-Here is an example from the book "Flow-Based Programming" (Fig. 9.1): 
+Here is an example from the book "Flow-Based Programming" (Fig. 9.1).  We show a typical sequential file, with two levels of groupings: branch, and account.  Note that there are often no special records showing the beginning or end of a grouping - this often has to be detected by changes in "control fields".
 
 ```
  IP type     branch   acct #      date       amount   DEP/WD
@@ -35,11 +37,11 @@ Here is an example from the book "Flow-Based Programming" (Fig. 9.1):
    .
 ```
 
-The "IP type" is the class of each IP contents.  In this case, for downstream processing you could arrange to have an "open bracket" IP at the start of every "branch" and also every "account", and a "close bracket" at the end of every "account" and also every "branch".  
+The "IP type" is the class of each IP contents.  In this case, in FBP, the first thing we usually do is to insert an "open bracket" IP at the start of every "branch" and "account", and a "close bracket" at the end of every "account" and "branch".  
 
-In conventional programming a lot of the processing takes place when a control field *changes*, so it is actually very helpful to have an explicit data item (an IP) signalling the point where such a change occurs!
+In conventional programming much of the processing takes place when a control field *changes*, so it is actually very helpful to have an explicit data item (an IP) signalling the point where such a change occurs!
 
-FBP has a standard component to insert the brackets at the right places ["Collate"](https://github.com/jpaulm/javafbp/blob/master/src/main/java/com/jpaulmorrison/fbp/core/components/misc/Collate.java).
+FBP has a standard component to insert the brackets at the right places ["Collate"](https://github.com/jpaulm/javafbp/blob/master/src/main/java/com/jpaulmorrison/fbp/core/components/misc/Collate.java). While the name suggests two or more input streams, you can just as well use it with one input stream.
 
 Schematically we can show the output as follows, using angle brackets for the "bracket" IPs (you can generate your brackets with tags describing what kind of group they designate, even though this is not strictly necessary): 
 
@@ -78,5 +80,11 @@ Schematically we can show the output as follows, using angle brackets for the "b
 ```
 
 The IPs between an "open bracket" and a "close bracket" comprise a "substream", so you can see that the two "branch substreams" actually each contain 2 "account substreams".
+
+### Interactive applications
+
+Another interesting application of bracket IPs is in interactive applications.  In this case, typically the application end user sends something to the system, and then waits for a result.  We thus have a very high level that looks like this:
+
+[High-level Interactive Application](../Step13/Step13-1.png)
 
 <span class=middle> &lt;== <a href="../Step12/">  Previous</a> / <a href="https://github.com/jpaulm/fbp-tutorial-filter-file/"> Index</a> /  Next ==&gt; (none)</span>
