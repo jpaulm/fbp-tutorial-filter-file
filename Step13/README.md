@@ -87,6 +87,6 @@ Another interesting application of bracket IPs is in interactive applications.  
 
 ![High-level Interactive Application](../Step13/Step13-1.png)
 
-Now, rather than having one big object travelling around the network, it is useful to use a substream, where the first IP after the bracket IP represents the "state" of the screen, plus user info, followed by 0 or more IPs containing relevant data.
+Now, rather than having one big object travelling around the network, it is useful to use a substream, where the first IP after the bracket IP represents the "state" of the screen, plus user info, followed by 0 or more IPs containing relevant data.  The substream may even be a list, for example when you want to display all the courses someone has taken...
 
 <span class=middle> &lt;== <a href="../Step12/">  Previous</a> / <a href="https://github.com/jpaulm/fbp-tutorial-filter-file/"> Index</a> /  Next ==&gt; (none)</span>
