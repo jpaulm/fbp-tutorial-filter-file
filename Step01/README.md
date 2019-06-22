@@ -9,6 +9,12 @@ Here is a possible diagram, showing a simple application which displays the cont
 
 To execute this step of the tutorial, you will need to install DrawFBP, and draw this diagram.
 
+Drawing rules:
+
+- block descriptions must be unique in a diagram
+- port names need only be unique for a given block
+- component names may be shared by multiple blocks
+
 Save the result in a work directory of your choice.  If you open it using Wordpad, it should look like the file you get when you click on [this link](diagrams/Step01.drw).
 
 Of course, if you have trouble drawing the diagram, you can go the other way - simply copy the `.drw` file, and open this file under DrawFBP.
