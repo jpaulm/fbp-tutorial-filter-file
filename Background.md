@@ -10,4 +10,4 @@ This tutorial is designed not only to introduce you, the reader, to the *concept
 
 Remember the (good?) old days?!  Lovely cartoon from the '70s or '80s:
 
-![Needs more detail](Need_more_detail.jpg "Needs more detail!")
+![Needs more detail](Need_more_detail.jpg "And then a miracle occurs!")
