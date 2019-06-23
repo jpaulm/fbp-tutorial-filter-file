@@ -1,6 +1,6 @@
 # Tutorial on Flow-Based Programming (Filter File application)
 
-Filter File with DrawFBP: use a network of flow-based components to display selected records from files.
+Filter File with [DrawFBP](https://github.com/jpaulm/drawfbp): use a network of flow-based components to display selected records from files.
 
 For more about Flow-Based Programming (FBP) please see https://github.com/flowbased/flowbased.org/wiki and http://www.jpaulmorrison.com/fbp/ .  
 
