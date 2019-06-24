@@ -2,7 +2,7 @@
 
 Filter File with [DrawFBP](https://github.com/jpaulm/drawfbp): use a network of flow-based components to display selected records from files.
 
-For more about Flow-Based Programming (FBP) please see https://github.com/flowbased/flowbased.org/wiki and http://www.jpaulmorrison.com/fbp/ .  
+For more about Flow-Based Programming (FBP) please see https://en.wikipedia.org/wiki/Flow-based_programming and http://www.jpaulmorrison.com/fbp/ .  
 
 This tutorial is repeatable, so that concepts can be shared with others, or reinforced and clarified in future, perhaps on a different platform.  FBP, as demonstrated here, is fully asynchronous, and uses a "conveyor belt" analogy, rather than being procedural like a number of other systems which also use the term "Flow-Based Programming".  
 
