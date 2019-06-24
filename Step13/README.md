@@ -95,7 +95,7 @@ Now, rather than having one big object travelling around the network, it is usef
 
 There is a practical example of this architecture in  [Web Sockets](https://github.com/jpaulm/javafbp-websockets).  Here we split the above diagram between client and server.  The client code is written in HTML and JavaScript and simply sends a request substream across the sockets connection, and then displays the resulting list substream.  `Receive` and `Respond` are simple "off the shelf" FBP components, and the subnet can be any combination of components and subnets which produce the desired result.  As stated above, you can do anything - as long as substreams are not broken up!  I have copied the schematic from the above-mentioned repository:
 
-![ClientServer](https://github.com/jpaulm/javafbp-websockets/blob/master/docs/ClientServer.png "Diagram of Client and Server Network")
+![ClientServer](ClientServer.png "Diagram of Client and Server Network")
 
 
 <span class=middle> &lt;== <a href="../Step12/">  Previous</a> / <a href="https://github.com/jpaulm/fbp-tutorial-filter-file/"> Index</a> /  Next ==&gt; (none)</span>
