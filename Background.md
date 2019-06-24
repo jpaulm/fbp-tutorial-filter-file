@@ -6,7 +6,7 @@ How do you square this circle?  Years of training? Even that may not help a lot!
 
 If application development is mostly about processing *data*, why not use an approach that is data-, rather than procedure-, oriented?  Describe the data, and the transforms that have to be applied to it.  Maybe start off with the final output data, and then work backwards to the original inputs...? 
 
-We referred above to the "conveyor belt" image.  Here is a graphic of a part of such a system for bottling soft-drink cans, showing some of the (perhaps less obvious) advantages of this approach:
+We referred above to the "conveyor belt" image.  Here is a graphic of a part of such a system for bottling soft-drink cans, taken from a PowerPoint slide deck, showing some of the (perhaps less obvious) advantages of this approach:
 
 ![Bottling factory](bottling_factory.png)
 
