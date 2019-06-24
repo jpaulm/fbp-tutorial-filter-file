@@ -9,7 +9,7 @@ This tutorial is repeatable, so that concepts can be shared with others, or rein
 Using DrawFBP, we design and build a network of components from the JavaFBP library (jar file), then compile and run in a Windows or Unix environment.
 
 
-[Background](Background.md) 
+###[Background](Background.md) 
 
 ## Tutorial Steps
 
