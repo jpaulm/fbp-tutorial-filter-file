@@ -97,5 +97,7 @@ There is a practical example of this architecture in  [Web Sockets](https://gith
 
 ![ClientServer](ClientServer.png "Diagram of Client and Server Network")
 
+"WS" of course stands for Web Sockets.
+
 
 <span class=middle> &lt;== <a href="../Step12/">  Previous</a> / <a href="https://github.com/jpaulm/fbp-tutorial-filter-file/"> Index</a> /  Next ==&gt; (none)</span>
