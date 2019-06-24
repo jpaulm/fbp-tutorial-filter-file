@@ -85,7 +85,7 @@ The IPs between an "open bracket" and a "close bracket" comprise a "substream", 
 
 Another interesting application of bracket IPs is in interactive applications.  In this case, typically the application end user sends something to the system, and then waits for a result.  We thus have a very high level that looks like this:
 
-![High-level Interactive Application](../Step13/Step13-1.png)
+![High-level Interactive Application](Step13-1.png)
 
 Now clearly you can't tie up the whole machine for one user, so you will have substreams for different users chasing each other round the network. The rest of the application just has to make sure that the substream travels around as a unit! If you need to, you can also convert the substream into an IP "tree", and then back again - see [Chap. XII - Tree Structures](http://www.jpaulmorrison.com/fbp/tree.shtml) in "Flow-Based Programming", 1st ed. 
 
