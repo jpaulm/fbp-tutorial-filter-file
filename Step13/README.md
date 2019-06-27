@@ -99,7 +99,7 @@ There is a practical example of this architecture in the [Web Sockets](https://g
 
 "WS" of course stands for Web Sockets.
 
-I realize this may seem rather simple, but a real-life example will of course be more complex... and there are a number of ways performance can be improved, as e.g. by multiplexing, use of caches, etc.
+I realize this may seem rather simple, but a real-life example will of course be more complex... and there are a number of ways performance can be improved, as e.g. by multiplexing (using the [LoadBalancer](https://github.com/jpaulm/javafbp/blob/master/src/main/java/com/jpaulmorrison/fbp/core/components/routing/LoadBalance.java)), use of caches, etc.
 
 
 <span class=middle> &lt;== <a href="../Step12/">  Previous</a> / <a href="https://github.com/jpaulm/fbp-tutorial-filter-file/"> Index</a> /  Next ==&gt; (none)</span>
