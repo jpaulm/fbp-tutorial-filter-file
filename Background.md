@@ -10,9 +10,9 @@ We referred above to the "conveyor belt" image.  Here is a graphic of a part of 
 
 ![Bottling factory](bottling_factory.png)
 
-FBP builds on this metaphor!  In some ways, this is not a new approach: in the '60s, data processing was done using something called "Unit Record" - chunks of data (cards) being transported (by humans) between parametrizable components (machines using plug-boards) - all totally asyynchronous.  Worked pretty well, actually!
+FBP builds on this metaphor!  In some ways, this is not a new approach: in the '60s, data processing was done using a technology called "Unit Record" - chunks of data (cards) being transported (by humans) between parametrizable components (machines using plug-boards) - all totally asyynchronous.  Worked pretty well, actually!  I once debugged a plug-board over the phone, from home, soaking wet! 
 
-This tutorial is designed not only to introduce you, the reader, to the *concepts* of Flow-Based Programming (FBP), but  to give you a feeling for what it feels like to actually use the tool which supports these concepts in a number of different ways. FBP is "language-agnostic", but in this case we will using Java, as it is more closely integrated with the tool we will be using - [DrawFBP](https://github.com/jpaulm/drawfbp).  However, we could equally well use any other language which has an FBP implementation, although it would involve a bit more jumping back and forth between different tools.
+This tutorial is designed not only to introduce you, the reader, to the *concepts* of Flow-Based Programming (FBP), but to give you a feeling for what it feels like to actually use the tool which supports these concepts in a number of different ways. FBP is "language-agnostic", but in this case we will using Java, as it is more closely integrated with the tool we will be using - [DrawFBP](https://github.com/jpaulm/drawfbp).  However, we could equally well use any other language which has an FBP implementation, although it would involve a bit more jumping back and forth between different tools.
 
 Remember the (good?) old days?!  Lovely cartoon from the '70s or '80s:
 
