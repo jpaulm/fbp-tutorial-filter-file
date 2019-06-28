@@ -6,7 +6,7 @@ For more about Flow-Based Programming (FBP) please see https://en.wikipedia.org/
 
 This tutorial is repeatable, so that concepts can be shared with others, or reinforced and clarified in future, perhaps on a different platform.  FBP, as demonstrated here, is fully asynchronous, and uses a "conveyor belt" analogy, rather than being procedural like a number of other systems which also use the term "Flow-Based Programming".  
 
-Using DrawFBP, we design and build a network of components from the JavaFBP library (jar file), then compile and run in a Windows or Unix environment.
+Using DrawFBP, we design and build a network of components from the [JavaFBP](https://github.com/jpaulm/javafbp) library (jar file), then compile and run in a Windows or Unix environment.
 
 
 ### [Background](Background.md) 
