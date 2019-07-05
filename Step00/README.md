@@ -3,7 +3,7 @@
 
 ## Step00 - Setup DrawFBP
 
-### DrawFBP
+### DrawFBP essentials
 
 We will start by installing DrawFBP, the FBP diagramming tool.  * Go to https://github.com/jpaulm/drawfbp/releases/tag/v2.16.15 (8,597,247 bytes), and download the DrawFBP jar file, and store it on your chosen location for DrawFBP (either your desktop, or another location specifically for your DrawFBP work).
 
@@ -15,11 +15,13 @@ Make sure you have Java installed, by issuing
 
        java -version
        
-from the command line.
+from the command line.  You will also need to define JAVA_HOME to include jre (Java Runtime Environment) and jdk (Java Development Kit) properties, using the `set` command, such as:
 
-Either way, to run the tool, just double click on the jar file.
+      `C:\Users\bob\drawfbp>set JAVA_HOME=C:\PROGRA~1\Java\jre1.8.0_191\lib;C:\PROGRA~1\Java\jdk1.8.0_191'
 
-Alternatively, you can enter the command
+### Starting DrawFBP
+
+Just double click on the jar file.  Alternatively, you can enter the command
 
        java -jar DrawFBP-[all-]x.y.z.jar
        
@@ -41,9 +43,15 @@ Download the file https://github.com/jpaulm/drawfbp/blob/master/lib/javahelp-2.0
 
 Use the DrawFBP function `File/Locate Draw FBP Help File` to tell DrawFBP where it is: DrawFBP will remember your chosen location.
       
-### Locating JavaFBP jar file
+### Locating JavaFBP jar file and preparing Java FBP classes for use
 
 At this point, you should locate the JavaFBP jar file (it can be found in `https://github.com/jpaulm/javafbp/releases`), download it, and tell DrawFBP where it is, by using the DrawFBP function `File/Locate JavaFBP Jar File`.  Once you tell DrawFBP where it is, DrawFBP will remember the location from then on.  
+
+From the Windows System Command Prompt, change directory to your DrawFBP working area, and expand the JavaFBP jar file into sub-directories, using: 
+
+      `%JDK%\bin\jar.exe -xvf javafbp-4.1.0.jar`
+
+The .class files you are likely to use are availablr under sub-directories such as `com/jpaulmorrison/fbp/core/components/` and `com/jpaulmorrison/fbp/resourcekit/examples` and so on.
 
 <span class=middle> <a href="https://github.com/jpaulm/fbp-tutorial-filter-file/"> Index</a> / <a href="../Step01/"> Next </a>==&gt;</span> 
 
