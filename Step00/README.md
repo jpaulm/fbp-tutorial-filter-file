@@ -5,9 +5,11 @@
 
 ### DrawFBP
 
-We will start by installing DrawFBP, the FBP diagramming tool.  Go to https://github.com/jpaulm/drawfbp/releases/tag/v2.16.15 (8,597,247 bytes), and download the DrawFBP jar file, and store it on your desktop.  
+We will start by installing DrawFBP, the FBP diagramming tool.  * Go to https://github.com/jpaulm/drawfbp/releases/tag/v2.16.15 (8,597,247 bytes), and download the DrawFBP jar file, and store it on your chosen location for DrawFBP (either your desktop, or another location specifically for your DrawFBP work).
 
-Alternatively, you can do a search for `DrawFBP` on Maven.  
+*Our working assumption is that most users will have access to Windows, and that unix users will be able to adapt these steps to their preferences.
+
+Alternatively, you can do a search for `DrawFBP` on Maven.  *This will become the preferred location for DrawFBP, its Help facility, and the Java FBP Jar file, once this tutorial is commissioned after our current regression testing.  
 
 Make sure you have Java installed, by issuing
 
@@ -32,15 +34,16 @@ If at some later stage of testing, you want to point at a diagram's `.drw` file 
       drawfbp.bat <diagram file name>
       
 `drawfbp.bat` references the current DrawFBP jar file, but you can create your own version  if you prefer.
-      
+
+### Help Facility - Locating DrawFBP Help jar file
+
+Download the file https://github.com/jpaulm/drawfbp/blob/master/lib/javahelp-2.0.05.jar to your preferred DrawFBP work area. 
+
+Use the DrawFBP function `File/Locate Draw FBP Help File` to tell DrawFBP where it is: DrawFBP will remember your chosen location.
       
 ### Locating JavaFBP jar file
 
 At this point, you should locate the JavaFBP jar file (it can be found in `https://github.com/jpaulm/javafbp/releases`), download it, and tell DrawFBP where it is, by using the DrawFBP function `File/Locate JavaFBP Jar File`.  Once you tell DrawFBP where it is, DrawFBP will remember the location from then on.  
-
-### Help facility
-
-The DrawFBP Help facility uses the standard `JavaHelp` facility, which you can download from Maven Central, by doing a search for the artifact called `javahelp` .  After downloading it and saving it, click on the DrawFBP function `File/Locate DrawFBP Help File`.   Once you tell DrawFBP where it is, DrawFBP will remember the location from then on.  
 
 <span class=middle> <a href="https://github.com/jpaulm/fbp-tutorial-filter-file/"> Index</a> / <a href="../Step01/"> Next </a>==&gt;</span> 
 
