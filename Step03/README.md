@@ -13,7 +13,11 @@ Here is a portion of `compList`:
 
 ![compList part](compListPart.png)
 
-We now have to associate the `StartsWith` component with the filter block.  Since the component is in JavaFBP, you will need to use DrawFBP's `Locate JavaFBP Jar File` function, and then find `StartsWith` in that jar file, using the `Choose Component/Subnet Class` block function provided by DrawFBP. 
+We now have to associate the `StartsWith` component with the filter block.  Since the component is in JavaFBP, you will need to use DrawFBP's `Locate JavaFBP Jar File` function.  
+
+Now click on the `Choose Component/Subnet Class` block function provided by DrawFBP. This will bring up a `File Chooser` function, which you can use to locate `StartsWith`. In the first panel of `File Chooser`, you will see the JavaFBP jar file, followed by any other jar files you have added (using the `File/Add Additional Jar File` function), followed by the top level directories for the project you are working on. 
+
+Click on the JavaFBP jar file entry, and you can start walking through its tree structure, until you find the component you need.   
 
 Since different components specify different port names, you need to find out the port names used by `StartsWith`.  There are three ways available to do this:
 
