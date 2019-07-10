@@ -20,7 +20,7 @@ Since different components specify different port names, you need to find out th
 
 Of course, if you haven't filled in any of the port names, this display will show `No` in the `Connected?` column.
 
-- look at `compList.html` by clicking on http://htmlpreview.github.io/?https://github.com/jpaulm/javafbp/blob/master/compList.html , then `Edit/Find in This Page` .
+- Or look at `compList.html` by clicking on http://htmlpreview.github.io/?https://github.com/jpaulm/javafbp/blob/master/compList.html , then `Edit/Find in This Page` .
 
 **TODO: Port display for many components are missing port function annotations - these need to be filled in in JavaFBP.  See issue #2**
 
