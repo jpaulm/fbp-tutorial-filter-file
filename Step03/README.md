@@ -8,9 +8,9 @@ How do we find a suitable component?  Well, the first step is to install JavaFBP
 
 We now have to associate the `StartsWith` component with the filter block.  Since the component is in JavaFBP, you will need to use the `Choose Component/Subnet Class` block function provided by DrawFBP. This will bring up a `File Chooser` function, which you can use to locate `StartsWith`. In the first panel of `File Chooser`, you will see the JavaFBP jar file, followed by any other jar files you have added (using the `File/Add Additional Jar File` function), followed by the top level directories for the project you are working on.
 
-Click on the JavaFBP jar file entry, and you can start walking through its tree structure, until you find the component you need, which is in the package `com/jpaulmorrison/fbp/core/components/text`
+Click on the JavaFBP jar file entry, and you can start walking through its tree structure, until you find the component you need, which is in the package `com/jpaulmorrison/fbp/core/components/text`.
 
-Since different components specify different port names, you need to find out the port names used by `StartsWith`.  Here are three of the ways available to do this:
+Since different components specify different port names, you need to find out the port names used by `StartsWith`.  Here are three ways that are available to do this:
 
 - go to the source code for the component in the JavaFBP repo ( `src/main/java/com/jpaulmorrison/fbp/core` ), and look at the annotations (`@OutPorts` and `@InPorts`), or
 
@@ -18,7 +18,7 @@ Since different components specify different port names, you need to find out th
 
 ![StartsWith ports](StartsWith.png)
 
-Of course, if you haven't filled in any of the port names, this display will show `No` in the `Connected?` column.
+Of course, if you haven't yet filled in any of the port names, this display will show `No` in the `Connected?` column.
 
 - Or look at `compList.html` by clicking on http://htmlpreview.github.io/?https://github.com/jpaulm/javafbp/blob/master/compList.html , then `Edit/Find in This Page` .
 
