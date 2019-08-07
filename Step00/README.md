@@ -7,7 +7,7 @@
 
 We will start by installing DrawFBP, the FBP diagramming tool.  Go to https://github.com/jpaulm/drawfbp/releases , download the latest (non-pre-Release) DrawFBP jar file, and store it on your chosen location for DrawFBP (either your desktop, or another location specifically for your DrawFBP work).
 
-*Our working assumption is that most users will have access to Windows, and that unix users will be able to adapt these steps to their preferences.
+*Our working assumption is that most users will have access to Windows, and that unix users will be able to adapt these steps to their preferences.*
 
 Alternatively, you can do a search for `DrawFBP` on Maven.  *This will become the preferred location for DrawFBP, its Help facility, and the Java FBP Jar file, once this tutorial is commissioned after our current regression testing.  
 
