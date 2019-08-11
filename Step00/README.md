@@ -19,7 +19,7 @@ Make sure you have Java installed, by issuing
        
 from the command line.  You will also need to define JAVA_HOME to include jre (Java Runtime Environment) and jdk (Java Development Kit) properties, using the `set` command, such as:
 
-      `C:\Users\bob\drawfbp>set JAVA_HOME=C:\PROGRA~1\Java\jre1.8.0_191\lib;C:\PROGRA~1\Java\jdk1.8.0_191'
+      `C:\Users\bob\drawfbp>set JAVA_HOME=C:\PROGRA~1\Java\jre1.8.0_191\lib;C:\PROGRA~1\Java\jdk1.8.0_191`
 
 ### Starting DrawFBP
 
@@ -48,13 +48,6 @@ Use the DrawFBP function `File/Locate Draw FBP Help File` to tell DrawFBP where 
 ### Locating JavaFBP jar file and preparing Java FBP classes for use
 
 At this point, you should locate the JavaFBP jar file (it can be found on [Maven](https://search.maven.org/search?q=g:%22com.jpaulmorrison%22%20AND%20a:%22javafbp%22) or in [JavaFBP Releases](https://github.com/jpaulm/javafbp/releases)), download it, and tell DrawFBP where it is, by using the DrawFBP function `File/Locate JavaFBP Jar File`.  Once you tell DrawFBP where it is, DrawFBP will remember the location from then on.  
-
-<!--
-From the Windows System Command Prompt, change directory to your DrawFBP working area, and expand the JavaFBP jar file into sub-directories, using: 
-
-      `%JDK%\bin\jar.exe -xvf javafbp-4.1.0.jar`      
-
--->
 
 The .class files you are likely to use are available under sub-directories such as `com/jpaulmorrison/fbp/core/components/` and `com/jpaulmorrison/fbp/resourcekit/examples` and so on.
 
