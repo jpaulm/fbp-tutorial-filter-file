@@ -15,8 +15,7 @@ Drawing rules:
 - port names need only be unique for a given block
 - component names may be shared by multiple blocks
 
-Save the result in a work directory of your choice.  If you open it using Wordpad, it should look like the file you get when you click on   
-[this link](diagrams/Step01.drw).
+Save the result in a work directory of your choice.  If you open it using Wordpad, it should look like the file you get when you click on [this link](diagrams/Step01.drw).
 
 Of course, if you have trouble drawing the diagram, you can go the other way - simply copy the `.drw` file, and open this file under DrawFBP.
 
