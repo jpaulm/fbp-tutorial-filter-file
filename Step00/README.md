@@ -5,6 +5,8 @@
 
 ### DrawFBP essentials
 
+Essential parts: DrawFBP diagram tool for FBP networks, DrawFBP help file, JavaFBP library of FBP components.  
+
 We will start by installing DrawFBP, the FBP diagramming tool.  Go to https://github.com/jpaulm/drawfbp/releases , download the latest (non-pre-Release) DrawFBP jar file, and store it on your chosen location for DrawFBP (either your desktop, or another location specifically for your DrawFBP work).
 
 *Our working assumption is that most users will have access to Windows, and that unix users will be able to adapt these steps to their preferences.*
