@@ -15,5 +15,7 @@ DrawFBP's colouring of code is mostly to make character strings and comments sta
 
 `component` and `connect` are self-explanatory! `initialize` builds an IIP, and connects it to an input port of a component.
 
+When using `Save As`, to get ready for compiling and running the FBP network, please be aware that for Java DrawFBP uses the convention of matching sub-directories under `src` (for the `.java` files) and `bin` (for the compiled `.class` files).
+
 
 <span class=middle> &lt;== <a href="../Step05/">  Previous</a> / <a href="https://github.com/jpaulm/fbp-tutorial-filter-file/"> Index</a> / <a href="../Step07/"> Next</a> ==&gt;</span>
