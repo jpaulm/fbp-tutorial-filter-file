@@ -3,7 +3,7 @@
 
 ## Step06 - Generate a Java program
  
-Now we have all the necessary information filled in to generate a running program, so click on `Generate Java Network` - Java is the default language, so this function has `Java` filled in in the File menu. This can be changed by clicking on `Select Diagram Language`: currently 4 languages are supported - Java, C#, JSON and FBP.
+Now we have all the necessary information filled in to generate a running program, so click on `File/Generate ... Network` - Java is the default language, so in the `File` menu, this function will show up as `Generate Java Network`.  You can switch languages by clicking on `Select Diagram Language`, and this menu entry will change accordingly: currently 4 languages are supported - Java, C#, JSON and FBP.
 
 Here is the result:
 
