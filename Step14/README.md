@@ -25,9 +25,15 @@ I realize this may seem rather simple, but a real-life example will of course be
 
 Now let's consider what is going on at the "back end" of this diagram...
 
-So far I have just drawn a single subnet processing input, but of course most applications will need to access data...
+So far I have just drawn a single subnet processing input, but of course most applications will need to access data... By the rule of separation of concerns, we naturally use a separate I/O component, which we will call "DB" for now, so we will add that into the diagram (using the simpler diagram above), as follows: [App with database access]().
 
+You will notice that DB has an input port *and* an output port, so it is equivalent (in this diagram) to a subroutine call...  Quoting Prof. Gelernter (Linda),
 
+<blockquote>
+In our experience, processes in a parallel program usually don’t care what happens to their data, and when they don’t, it is more efficient and conceptually more apt [my italics] to use an asynchronous operation like Linda’s “out” than a synchronous procedure call.... It’s trivial, in Linda, [or FBP] to implement a synchronous remote-procedure-call-like operation in terms of “out” and “in” [FBP “send” and “receive”]. There is no reason we know of, however, to base an entire parallel language on this one easily programmed but not crucially important special case.  
+<blockquote>
+  
+You may be wondering why we don't use a subroutine call, but we don't want to wire the name of the "DB" function into the caller's code.  Not even Object-Oriented does that!  But, more importantly, "DB" can operate both in "call" mode, and in "flow-through" mode.  In the latter case, it's like a drive-in: the requester drives in, picks up the payload, and exits via the output port. See Gelernter above: "processes in a parallel program usually don’t care what happens to their data".
 
 
 <span class=middle> &lt;== <a href="../Step12/">  Previous</a> / <a href="https://github.com/jpaulm/fbp-tutorial-filter-file/"> Index</a> /  Next ==&gt; (none)</span>
