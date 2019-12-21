@@ -83,23 +83,7 @@ The IPs between an "open bracket" and a "close bracket" comprise a "substream", 
 
 ### Interactive applications
 
-Another interesting application of bracket IPs is in interactive applications.  In this case, typically the application end user sends something to the system, and then waits for a result.  We thus have a very high level that looks like this:
-
-![High-level Interactive Application](Step13-1.png)
-
-Now clearly you can't tie up the whole machine for one user, so you will have substreams for different users chasing each other round the network. The rest of the application just has to make sure that the substream travels around as a unit! If you need to, you can also convert the substream into an IP "tree", and then back again - see [Chap. XII - Tree Structures](http://www.jpaulmorrison.com/fbp/tree.shtml) in "Flow-Based Programming", 1st ed. 
-
-Interestingly, Facebook announced a few years ago - [Flux: An Application Architecture for React](https://reactjs.org/blog/2014/05/06/flux.html) - that they had shifted to this design approach, which they call "Flux".
-
-Now, rather than having one big object travelling around the network, it is useful to use a substream, where the first IP after the bracket IP represents the "state" of the screen, plus user info, followed by 0 or more IPs containing relevant data.  The substream may even be a list, for example when you want to display all the courses someone has taken...
-
-There is a practical example of this architecture in the [Web Sockets](https://github.com/jpaulm/javafbp-websockets) repository.  Here we split the above diagram between client and server.  The client code is written in HTML and JavaScript and simply sends a request substream across the sockets connection, and then displays the resulting list substream.  `Receive` and `Respond` are simple "off the shelf" FBP components, and the subnet can be any combination of components and subnets which produce a result substream which will be processed by `Respond`.  As stated above, you can do anything - as long as substreams are not broken up!  I have copied the schematic from [Web Sockets](https://github.com/jpaulm/javafbp-websockets):
-
-![ClientServer](ClientServer.png "Diagram of Client and Server Network")
-
-"WS" of course stands for Web Sockets.
-
-I realize this may seem rather simple, but a real-life example will of course be more complex... and there are a number of ways performance can be improved, as e.g. by multiplexing (using the [LoadBalancer](https://github.com/jpaulm/javafbp/blob/master/src/main/java/com/jpaulmorrison/fbp/core/components/routing/LoadBalance.java), as shown in the diagram at the end of [JavaFBP-WebSockets](https://github.com/jpaulm/javafbp-websockets/blob/master/README.md)), use of caches, etc.
+A major use of substreams is in building interactive applications.  Interestingly Facebook has recently announced what appears to be a rather similar design approach, called "Flux" -  [Flux: An Application Architecture for React](https://reactjs.org/blog/2014/05/06/flux.html) .   The FBP approach to designing interactive applications is described in more detail in <a href="../Step14/"> Step14</a>.  Actually, we should describe this as "one approach"...
 
 
-<span class=middle> &lt;== <a href="../Step12/">  Previous</a> / <a href="https://github.com/jpaulm/fbp-tutorial-filter-file/"> Index</a> /  Next ==&gt; (none)</span>
+<span class=middle> &lt;== <a href="../Step12/">  Previous</a> / <a href="https://github.com/jpaulm/fbp-tutorial-filter-file/"> Index</a> /  <a href="../Step14/"> Next</a> ==&gt;</span>
