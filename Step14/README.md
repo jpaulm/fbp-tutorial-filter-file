@@ -39,6 +39,10 @@ In our experience, processes in a parallel program usually don’t care what hap
   
 You may be wondering why we don't use a subroutine call, but we don't want to wire the name of the Database Access function into the caller's code.  Not even Object-Oriented does that!  But, more importantly, Database Access can operate both in "call" mode, and in "flow-through" mode.  See Gelernter above: "...processes in a parallel program usually don’t care what happens to their data."
 
+Schematically:
+
+![High-level Interactive Application](Step14-3.png)
+
 In the diagram, I have shown "Process" as a single block - I am assuming that the process needs to retain some state data across the database access.  Another not uncommon scenario is where the database processing is offline, and might take a while - in which case one might split the "Process" block and provide some kind of index to keep track of in-process data requests, and relate the output of Database Access to its input.
 
 
