@@ -43,7 +43,21 @@ Schematically:
 
 ![High-level Interactive Application](Step14-3.png)
 
-In the diagram, I have shown "Process" as a single block - I am assuming that the process needs to retain some state data across the database access.  Another not uncommon scenario is where the database processing is offline, and might take a while - in which case one might split the "Process" block and provide some kind of index to keep track of in-process data requests, and relate the output of Database Access to its input.
+In the above diagram, I have shown "Process" as a single block communicating with a single I/O block - this means that, in this instance, I/O is essentially synchronous and can only handle one user at a time.  Of course, I/O is generally slower than computation, so this works if accesses to the relevant database are not very frequent.  If they are, we will want to adopt techniques for spreading the load - on such is the LoadBalancer alluded to above, which will allow multiple users to do access the same database concurrently.  This in turn means that provision should be made for handling I/O deadlocks, as one user may be trying to write a data block, while another reads it or writes it.  There is a whole chapter on this in the book on [Flow-Based Programming: Chap. XIX: Synchronization and Checkpoints](https://jpaulm.github.io/fbp/book.html).
+
+Another way to improve I/O performance is to take advantage of the "80/20" rule, and add a caching component upstream from the I/O...
+
+In the diagram, coding "Process" as a single block allows the process to retain data across the database access.  However, where RESTful conventions are followed, this should not be necessary.  This also allows at least part of the database processing to be offline.  As this might take a while, one might split the "Process" block and provide some kind of index to keep track of in-process data requests and relate the output of Database Access to its input.
+
+We will also want to make the I/O component(s) reusable, which involves establishing a "contract" between it/them and any upstream components.  I am suggesting that there should be at minimum:
+
+- a GET protocol: incoming IP specifies a key; outgoing IP contains zero or more result IPs
+
+- a PUT protocol: incoming IP specifies a key, following IPs contain data;  outgoing IP indicates success or failure
+
+- a DELETE protocol: incoming IP specifies a key; outgoing IP indicates success or failure
+
+Clearly, different users' substreams will follow each other (without splitting substreams) through the I/O subsystem. 
 
 
 <span class=middle> &lt;== <a href="../Step13/">  Previous</a> / <a href="https://github.com/jpaulm/fbp-tutorial-filter-file/"> Index</a> /  Next ==&gt; (none)</span>
