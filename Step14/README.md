@@ -27,9 +27,9 @@ Now let's consider what is going on at the "back end" of this diagram...
 
 So far I have just drawn a single subnet processing input, but of course most applications will need to access data... By the rule of separation of concerns, we naturally use a separate I/O component, which we will call "Database Access", so we will add that into the diagram (using the simpler diagram above), as follows:
 
-![App with database access](Step14-2.png).
+![App with database access](Step14-2.png) 
 
-(The disk icon is just a visual clue - it will not generate any code).
+(The disk icon is just a visual clue - it will not result in any code being generated)
 
 You will notice that Database Access has an input port *and* an output port, so it is equivalent (in this diagram) to a subroutine call...  Quoting Prof. Gelernter (Linda),
 
