@@ -43,17 +43,17 @@ Schematically:
 
 ![High-level Interactive Application](Step14-3.png)
 
-In the above diagram, I have shown "Process" as a single block communicating with a single I/O block - this means that, in this instance, I/O is essentially synchronous and can only handle one user at a time.  Of course, I/O is generally slower than computation, so this works if accesses to the relevant database are not very frequent.  If they are, we will want to adopt techniques for spreading the load - on such is the LoadBalancer alluded to above, which will allow multiple users to do access the same database concurrently.  This in turn means that provision should be made for handling I/O deadlocks, as one user may be trying to write a data block, while another reads it or writes it.  There is a whole chapter on this in the book on [Flow-Based Programming: Chap. XIX: Synchronization and Checkpoints](https://jpaulm.github.io/fbp/book.html).
+In the above diagram, I have shown "Process" as a single block communicating with a single I/O block - this means that, in this instance, I/O is essentially synchronous and can only handle one user at a time.  Of course, I/O is generally slower than computation, so this works if accesses to the relevant database are not very frequent.  If they are, we will want to adopt techniques for spreading the load - on such is the LoadBalancer alluded to above, which will allow multiple users to do access the same database concurrently.  This in turn means that provision should be made for handling I/O deadlocks, as one user may be trying to write a data block, while another reads it or writes it.  There is a whole chapter on this in the book on [Flow-Based Programming: 2nd ed.](https://jpaulm.github.io/fbp/book.html) - Chap. XIX: Synchronization and Checkpoints.
 
 Another way to improve I/O performance is to take advantage of the "80/20" rule, and add a caching component upstream from the I/O...
 
 In the diagram, coding "Process" as a single block allows the process to retain data across the database access.  However, where RESTful conventions are followed, this should not be necessary.  This also allows at least part of the database processing to be offline.  As this might take a while, one might split the "Process" block and provide some kind of index to keep track of in-process data requests and relate the output of Database Access to its input.
 
-We will also want to make the I/O component(s) reusable, which involves establishing a "contract" between it/them and any upstream components.  I am suggesting that there should be at minimum:
+We will also want to make the I/O component(s) reusable, which involves establishing a "contract" between it/them and any upstream components.  Some efforts at standardization should be undertaken...  I am suggesting that there should be at minimum:
 
 - a GET protocol: incoming IP specifies a key; outgoing IP contains zero or more result IPs
 
-- a PUT protocol: incoming IP specifies a key, following IPs contain data;  outgoing IP indicates success or failure
+- a PUT protocol: incoming IP specifies a key, following IPs contain data;  outgoing IP indicates success or failure -  this either updates data or creates new data
 
 - a DELETE protocol: incoming IP specifies a key; outgoing IP indicates success or failure
 
