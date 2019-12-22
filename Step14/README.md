@@ -25,19 +25,19 @@ I realize this may seem rather simple, but a real-life example will of course be
 
 Now let's consider what is going on at the "back end" of this diagram...
 
-So far I have just drawn a single subnet processing input, but of course most applications will need to access data... By the rule of separation of concerns, we naturally use a separate I/O component, which we will call "DB" for now, so we will add that into the diagram (using the simpler diagram above), as follows:
+So far I have just drawn a single subnet processing input, but of course most applications will need to access data... By the rule of separation of concerns, we naturally use a separate I/O component, which we will call "Database Access", so we will add that into the diagram (using the simpler diagram above), as follows:
 
 ![App with database access](Step14-2.png).
 
-You will notice that DB has an input port *and* an output port, so it is equivalent (in this diagram) to a subroutine call...  Quoting Prof. Gelernter (Linda),
+You will notice that Database Access has an input port *and* an output port, so it is equivalent (in this diagram) to a subroutine call...  Quoting Prof. Gelernter (Linda),
 
 <blockquote>
 In our experience, processes in a parallel program usually don’t care what happens to their data, and when they don’t, it is more efficient and conceptually more apt to use an asynchronous operation like Linda’s “out” than a synchronous procedure call.... It’s trivial, in Linda, [or FBP - my comment] to implement a synchronous remote-procedure-call-like operation in terms of “out” and “in” [FBP “send” and “receive”]. There is no reason we know of, however, to base an entire parallel language on this one easily programmed but not crucially important special case.  
 </blockquote>
   
-You may be wondering why we don't use a subroutine call, but we don't want to wire the name of the "DB" function into the caller's code.  Not even Object-Oriented does that!  But, more importantly, "DB" can operate both in "call" mode, and in "flow-through" mode.  See Gelernter above: "...processes in a parallel program usually don’t care what happens to their data."
+You may be wondering why we don't use a subroutine call, but we don't want to wire the name of the Database Access function into the caller's code.  Not even Object-Oriented does that!  But, more importantly, Database Access can operate both in "call" mode, and in "flow-through" mode.  See Gelernter above: "...processes in a parallel program usually don’t care what happens to their data."
 
-In the diagram, I have shown "Process" as a single block - I am assuming that the process needs to retain some state data across the database access.  Another not uncommon scenario is where the database processing is offline, and might take a while - in which case one might split the "Process" block and provide some kind of index to keep track of in-process data requests, and relate the output of "DB" to its input.
+In the diagram, I have shown "Process" as a single block - I am assuming that the process needs to retain some state data across the database access.  Another not uncommon scenario is where the database processing is offline, and might take a while - in which case one might split the "Process" block and provide some kind of index to keep track of in-process data requests, and relate the output of Database Access to its input.
 
 
 <span class=middle> &lt;== <a href="../Step12/">  Previous</a> / <a href="https://github.com/jpaulm/fbp-tutorial-filter-file/"> Index</a> /  Next ==&gt; (none)</span>
