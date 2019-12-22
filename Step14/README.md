@@ -29,6 +29,8 @@ So far I have just drawn a single subnet processing input, but of course most ap
 
 ![App with database access](Step14-2.png).
 
+(The disk icon is just a visual clue - it will not generate any code).
+
 You will notice that Database Access has an input port *and* an output port, so it is equivalent (in this diagram) to a subroutine call...  Quoting Prof. Gelernter (Linda),
 
 <blockquote>
