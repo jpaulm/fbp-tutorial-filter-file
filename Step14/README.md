@@ -59,5 +59,9 @@ We will also want to make the I/O component(s) reusable, which involves establis
 
 Clearly, different users' substreams will follow each other (without splitting substreams) through the I/O subsystem. 
 
+After all this verbiage, we are going to try a little artwork.  I'm afraid it's a bit wide, but here goes:
+
+![Interactive Application with Database Access](Step14-4.png)
+
 
 <span class=middle> &lt;== <a href="../Step13/">  Previous</a> / <a href="https://github.com/jpaulm/fbp-tutorial-filter-file/"> Index</a> /  Next ==&gt; (none)</span>
