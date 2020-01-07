@@ -63,5 +63,7 @@ After all this verbiage, we are going to try a little artwork.  I'm afraid it's 
 
 ![Interactive Application with Database Access](Step14-4.png)
 
+The path marked BYPASS1 represents data being processed that does not need to access the database; the path marked BYPASS2 represents data being processed that needs to take another pass through the database.
+
 
 <span class=middle> &lt;== <a href="../Step13/">  Previous</a> / <a href="https://github.com/jpaulm/fbp-tutorial-filter-file/"> Index</a> /  Next ==&gt; (none)</span>
