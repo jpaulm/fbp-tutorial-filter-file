@@ -5,19 +5,19 @@
 
 ### DrawFBP essentials
 
-Essential parts: DrawFBP diagram tool for FBP networks, DrawFBP help file, JavaFBP library of FBP components.  
+Essential parts: DrawFBP diagram tool for FBP networks, including help file; JavaFBP library of FBP components.  
 
 We will start by installing DrawFBP, the FBP diagramming tool.  Go to https://github.com/jpaulm/drawfbp/releases , download the latest (non-pre-Release) DrawFBP jar file, and store it on your chosen location for DrawFBP (either your desktop, or another location specifically for your DrawFBP work).
 
 *Our working assumption is that most users will have access to Windows, and that unix users will be able to adapt these steps to their preferences.*
 
-Alternatively, you can do a search for `DrawFBP` on Maven.  *This will become the preferred location for DrawFBP, its Help facility, and the Java FBP Jar file, once this tutorial is commissioned after our current regression testing.  
+Alternatively, you can do a search for `DrawFBP` on Maven.  *This will become the preferred location for DrawFBP and its Help facility, and the Java FBP Jar file, once this tutorial is commissioned after our current regression testing.  
 
 Make sure you have Java installed, by issuing
 
        java -version
        
-from the command line.  You will also need to define JAVA_HOME to include jre (Java Runtime Environment) and jdk (Java Development Kit) properties, using the `set` command, such as:
+from the command line.  You will also need to define JAVA_HOME to include jre (Java Runtime Environment) and jdk (Java Development Kit) components, using the `set` command, such as:
 
       C:\Users\bob\drawfbp>set JAVA_HOME=C:\PROGRA~1\Java\jre1.8.0_191\lib;C:\PROGRA~1\Java\jdk1.8.0_191
 
@@ -25,9 +25,9 @@ from the command line.  You will also need to define JAVA_HOME to include jre (J
 
 Just double click on the jar file.  Alternatively, you can enter the command
 
-       java -jar DrawFBP-[all-]x.y.z.jar
+       java -jar drawfbp-x.y.z.jar
        
-from the command line (you need `all-` if it came from Releases, and not if it came from Maven).
+from the command line (current version 23 March 2020 is drawfbp-2.19.5.jar).
 
 When you first fire up DrawFBP, you will see the DrawFBP logo, with 3 connected blocks of different colours.  This will last for a few seconds... or until you move the mouse.  In normal use, DrawFBP displays the diagram you were working on, so you will not see the logo.
 
