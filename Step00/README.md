@@ -39,11 +39,7 @@ If at some later stage of testing, you want to point at a diagram's `.drw` file 
       
 `drawfbp.bat` references the current DrawFBP jar file, but you can create your own version  if you prefer.
 
-### Help Facility - Locating DrawFBP Help jar file
-
-Download the file https://github.com/jpaulm/drawfbp/blob/master/lib/javahelp-2.0.05.jar to your preferred DrawFBP work area. 
-
-Use the DrawFBP function `File/Locate Draw FBP Help File` to tell DrawFBP where it is: DrawFBP will remember your chosen location.
+### Help Facility - DrawFBP Help jar file is now bundled with drawfbp jar file
       
 ### Locating JavaFBP jar file and preparing Java FBP classes for use
 
